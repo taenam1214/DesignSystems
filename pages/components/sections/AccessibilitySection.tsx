@@ -23,66 +23,66 @@ export function AccessibilitySection() {
   const wcagPrinciples = [
     {
       icon: Eye,
-      title: '인식 가능',
-      description: '정보와 사용자 인터페이스 구성 요소는 사용자가 인식할 수 있는 방식으로 제시되어야 합니다.',
+      title: 'Perceivable',
+      description: 'Information and user interface components must be presented in ways users can perceive.',
       guidelines: [
-        '텍스트가 아닌 콘텐츠에 대체 텍스트 제공',
-        '충분한 색상 대비 확보',
-        '텍스트 크기 조정 지원',
-        '자동 재생 미디어 제어'
+        'Provide alternative text for non-text content',
+        'Ensure sufficient color contrast',
+        'Support text resizing',
+        'Control for autoplay media'
       ]
     },
     {
       icon: Keyboard,
-      title: '조작 가능',
-      description: '사용자 인터페이스 구성 요소와 탐색은 조작 가능해야 합니다.',
+      title: 'Operable',
+      description: 'User interface components and navigation must be operable.',
       guidelines: [
-        '모든 기능을 키보드로 접근 가능',
-        '시간 제한이 있는 콘텐츠 제어',
-        '발작을 유발하는 콘텐츠 피하기',
-        '탐색 및 콘텐츠 찾기 도움'
+        'All functionality accessible by keyboard',
+        'Control for time-limited content',
+        'Avoid content that can cause seizures',
+        'Help with navigation and finding content'
       ]
     },
     {
       icon: Users,
-      title: '이해 가능',
-      description: '정보와 사용자 인터페이스 작동은 이해할 수 있어야 합니다.',
+      title: 'Understandable',
+      description: 'Information and the operation of the user interface must be understandable.',
       guidelines: [
-        '텍스트 콘텐츠를 읽고 이해하기 쉽게',
-        '콘텐츠 표시와 작동을 예측 가능하게',
-        '사용자 입력 오류 방지 및 수정 도움',
-        '명확하고 일관된 레이블 사용'
+        'Make text content easy to read and understand',
+        'Make content display and operation predictable',
+        'Help prevent and correct user input errors',
+        'Use clear and consistent labels'
       ]
     },
     {
       icon: Target,
-      title: '견고함',
-      description: '콘텐츠는 다양한 사용자 에이전트에서 해석될 수 있을 만큼 견고해야 합니다.',
+      title: 'Robust',
+      description: 'Content must be robust enough to be interpreted by a wide variety of user agents.',
       guidelines: [
-        '호환성 최대화',
-        '보조 기술과의 호환성',
-        '표준 HTML 및 ARIA 사용',
-        '미래 기술과의 호환성 고려'
+        'Maximize compatibility',
+        'Compatibility with assistive technologies',
+        'Use standard HTML and ARIA',
+        'Consider future technologies'
       ]
     }
   ];
 
   const colorContrastExamples = [
-    { bg: '#ffffff', fg: '#030213', ratio: '15.29:1', level: 'AAA', description: '기본 텍스트 - 흰 배경' },
-    { bg: '#ececf0', fg: '#030213', ratio: '12.85:1', level: 'AAA', description: '보조 배경 텍스트' },
-    { bg: '#030213', fg: '#ffffff', ratio: '15.29:1', level: 'AAA', description: '다크 배경 텍스트' },
-    { bg: '#d4183d', fg: '#ffffff', ratio: '5.72:1', level: 'AA', description: '오류 메시지' }
+    { bg: '#ffffff', fg: '#030213', ratio: '15.29:1', level: 'AAA', description: 'Default text - white background' },
+    { bg: '#ececf0', fg: '#030213', ratio: '12.85:1', level: 'AAA', description: 'Secondary background text' },
+    { bg: '#030213', fg: '#ffffff', ratio: '15.29:1', level: 'AAA', description: 'Dark background text' },
+    { bg: '#d4183d', fg: '#ffffff', ratio: '5.72:1', level: 'AA', description: 'Error message' }
   ];
 
   const keyboardShortcuts = [
-    { key: 'Tab', description: '다음 포커스 가능한 요소로 이동' },
-    { key: 'Shift + Tab', description: '이전 포커스 가능한 요소로 이동' },
-    { key: 'Enter', description: '버튼 또는 링크 활성화' },
-    { key: 'Space', description: '버튼 활성화, 체크박스 토글' },
-    { key: '방향키', description: '라디오 버튼, 메뉴 항목 탐색' },
-    { key: 'Escape', description: '모달, 메뉴 닫기' },
-    { key: 'Home/End', description: '목록의 첫 번째/마지막 항목으로' },
-    { key: 'Page Up/Down', description: '긴 목록에서 페이지 단위 이동' }
+    { key: 'Tab', description: 'Move to the next focusable element' },
+    { key: 'Shift + Tab', description: 'Move to the previous focusable element' },
+    { key: 'Enter', description: 'Activate button or link' },
+    { key: 'Space', description: 'Activate button, toggle checkbox' },
+    { key: 'Arrow keys', description: 'Navigate radio buttons, menu items' },
+    { key: 'Escape', description: 'Close modal or menu' },
+    { key: 'Home/End', description: 'Go to the first/last item in a list' },
+    { key: 'Page Up/Down', description: 'Page up/down in long lists' }
   ];
 
   return (
@@ -94,9 +94,9 @@ export function AccessibilitySection() {
             <Accessibility className="w-6 h-6 text-primary" />
           </div>
           <div>
-            <h1 className="text-3xl font-semibold">접근성</h1>
+            <h1 className="text-3xl font-semibold">Accessibility</h1>
             <p className="text-muted-foreground">
-              모든 사용자가 동등하게 접근할 수 있는 포용적인 디지털 경험을 만들기 위한 가이드라인입니다.
+              Guidelines for creating inclusive digital experiences for all users.
             </p>
           </div>
         </div>
@@ -107,17 +107,17 @@ export function AccessibilitySection() {
           </Badge>
           <Badge variant="outline" className="flex items-center gap-1">
             <Keyboard className="w-3 h-3" />
-            키보드 탐색
+            Keyboard Navigation
           </Badge>
           <Badge variant="outline" className="flex items-center gap-1">
             <Volume2 className="w-3 h-3" />
-            스크린 리더
+            Screen Reader Support
           </Badge>
           <Badge variant="outline" className="flex items-center gap-1">
             <Contrast className="w-3 h-3" />
-            색상 대비
+            Color Contrast
           </Badge>
-          <Badge variant="outline">ARIA 라벨</Badge>
+          <Badge variant="outline">ARIA Labels</Badge>
         </div>
       </div>
 
@@ -133,9 +133,9 @@ export function AccessibilitySection() {
         <TabsContent value="principles" className="space-y-8">
           <Card>
             <CardHeader>
-              <CardTitle>WCAG 2.1 핵심 원칙</CardTitle>
+              <CardTitle>WCAG 2.1 Core Principles</CardTitle>
               <CardDescription>
-                웹 콘텐츠 접근성 가이드라인(WCAG)의 4가지 핵심 원칙입니다.
+                Four core principles of the Web Content Accessibility Guidelines (WCAG).
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -172,9 +172,9 @@ export function AccessibilitySection() {
 
           <Card>
             <CardHeader>
-              <CardTitle>우리의 접근성 목표</CardTitle>
+              <CardTitle>Our Accessibility Goals</CardTitle>
               <CardDescription>
-                DS 디자인 시스템이 지향하는 접근성 표준과 목표입니다.
+                Standards and goals DS Design System strives to achieve for accessibility.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -185,25 +185,25 @@ export function AccessibilitySection() {
                   </div>
                   <h4 className="font-medium">WCAG 2.1 AA</h4>
                   <p className="text-sm text-muted-foreground">
-                    모든 컴포넌트가 AA 수준을 준수합니다
+                    All components adhere to AA level
                   </p>
                 </div>
                 <div className="text-center space-y-2">
                   <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-blue-100">
                     <Keyboard className="w-6 h-6 text-blue-600" />
                   </div>
-                  <h4 className="font-medium">키보드 접근성</h4>
+                  <h4 className="font-medium">Keyboard Accessibility</h4>
                   <p className="text-sm text-muted-foreground">
-                    모든 상호작용이 키보드로 가능합니다
+                    All interactions are keyboard accessible
                   </p>
                 </div>
                 <div className="text-center space-y-2">
                   <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-purple-100">
                     <Volume2 className="w-6 h-6 text-purple-600" />
                   </div>
-                  <h4 className="font-medium">스크린 리더</h4>
+                  <h4 className="font-medium">Screen Reader Support</h4>
                   <p className="text-sm text-muted-foreground">
-                    보조 기술과 완전 호환됩니다
+                    Fully compatible with auxiliary technologies
                   </p>
                 </div>
               </div>
