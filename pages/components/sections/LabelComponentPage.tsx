@@ -91,28 +91,28 @@ export function LabelComponentPage() {
           <div>
             <h1 className="text-3xl font-semibold">Label</h1>
             <p className="text-muted-foreground">
-              폼 필드와 UI 요소를 위한 접근 가능한 레이블 컴포넌트입니다. 다양한 크기, 상태, 스타일 옵션을 제공합니다.
+              Accessible label components for form fields and UI elements. Offers various sizes, states, and style options.
             </p>
           </div>
         </div>
         <div className="flex flex-wrap gap-2">
           <Badge variant="outline" className="flex items-center gap-1">
             <Type className="w-3 h-3" />
-            폼 컴포넌트
+            Form Components
           </Badge>
-          <Badge variant="outline">접근성</Badge>
-          <Badge variant="outline">필수 표시</Badge>
-          <Badge variant="outline">도움말 텍스트</Badge>
-          <Badge variant="outline">에러 상태</Badge>
+          <Badge variant="outline">Accessibility</Badge>
+          <Badge variant="outline">Required Field</Badge>
+          <Badge variant="outline">Help Text</Badge>
+          <Badge variant="outline">Error State</Badge>
         </div>
       </div>
 
       <Tabs defaultValue="examples" className="space-y-6">
         <TabsList className="grid w-full grid-cols-4">
-          <TabsTrigger value="examples">예제</TabsTrigger>
-          <TabsTrigger value="patterns">패턴</TabsTrigger>
-          <TabsTrigger value="usage">사용법</TabsTrigger>
-          <TabsTrigger value="code">구현</TabsTrigger>
+          <TabsTrigger value="examples">Examples</TabsTrigger>
+          <TabsTrigger value="patterns">Patterns</TabsTrigger>
+          <TabsTrigger value="usage">Usage</TabsTrigger>
+          <TabsTrigger value="code">Implementation</TabsTrigger>
         </TabsList>
 
         {/* Examples Tab */}
@@ -120,97 +120,97 @@ export function LabelComponentPage() {
           {/* Basic Labels */}
           <Card>
             <CardHeader>
-              <CardTitle>기본 라벨</CardTitle>
+              <CardTitle>Basic Labels</CardTitle>
               <CardDescription>
-                다양한 크기와 스타일의 기본 라벨 예제입니다.
+                Examples of basic labels with various sizes and styles.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="space-y-4">
-                  <h4 className="font-medium">크기 변형</h4>
+                  <h4 className="font-medium">Size Variants</h4>
                   <div className="space-y-3">
                     <div>
-                      <Label size="sm">작은 라벨 (Small)</Label>
-                      <Input placeholder="작은 라벨 예제" className="mt-1" />
+                      <Label size="sm">Small Label</Label>
+                      <Input placeholder="Small Label Example" className="mt-1" />
                     </div>
                     <div>
-                      <Label size="default">기본 라벨 (Default)</Label>
-                      <Input placeholder="기본 라벨 예제" className="mt-1" />
+                      <Label size="default">Default Label</Label>
+                      <Input placeholder="Default Label Example" className="mt-1" />
                     </div>
                     <div>
-                      <Label size="lg">큰 라벨 (Large)</Label>
-                      <Input placeholder="큰 라벨 예제" className="mt-1" />
+                      <Label size="lg">Large Label</Label>
+                      <Input placeholder="Large Label Example" className="mt-1" />
                     </div>
                   </div>
                 </div>
 
                 <div className="space-y-4">
-                  <h4 className="font-medium">스타일 변형</h4>
+                  <h4 className="font-medium">Style Variants</h4>
                   <div className="space-y-3">
                     <div>
-                      <Label variant="default">기본 스타일</Label>
-                      <Input placeholder="기본 스타일" className="mt-1" />
+                      <Label variant="default">Default Style</Label>
+                      <Input placeholder="Default Style" className="mt-1" />
                     </div>
                     <div>
-                      <Label variant="muted">음소거 스타일</Label>
-                      <Input placeholder="음소거 스타일" className="mt-1" />
+                      <Label variant="muted">Muted Style</Label>
+                      <Input placeholder="Muted Style" className="mt-1" />
                     </div>
                     <div>
-                      <Label variant="success">성공 스타일</Label>
-                      <Input placeholder="성공 스타일" className="mt-1" />
+                      <Label variant="success">Success Style</Label>
+                      <Input placeholder="Success Style" className="mt-1" />
                     </div>
                     <div>
-                      <Label variant="warning">경고 스타일</Label>
-                      <Input placeholder="경고 스타일" className="mt-1" />
+                      <Label variant="warning">Warning Style</Label>
+                      <Input placeholder="Warning Style" className="mt-1" />
                     </div>
                   </div>
                 </div>
 
                 <div className="space-y-4">
-                  <h4 className="font-medium">상태 변형</h4>
+                  <h4 className="font-medium">State Variants</h4>
                   <div className="space-y-3">
                     <div>
-                      <Label required>필수 필드</Label>
-                      <Input placeholder="필수 입력 필드" className="mt-1" />
+                      <Label required>Required Field</Label>
+                      <Input placeholder="Required Input Field" className="mt-1" />
                     </div>
                     <div>
                       <Label 
                         error 
-                        errorMessage="이 필드는 필수입니다"
+                        errorMessage="This field is required"
                       >
-                        에러 상태
+                        Error State
                       </Label>
-                      <Input placeholder="에러가 있는 필드" className="mt-1" />
+                      <Input placeholder="Field with error" className="mt-1" />
                     </div>
                     <div>
                       <Label 
-                        helpText="사용자명은 3-20자 사이여야 합니다"
+                        helpText="Username must be 3-20 characters"
                       >
-                        도움말 포함
+                        Help Text Included
                       </Label>
-                      <Input placeholder="사용자명" className="mt-1" />
+                      <Input placeholder="Username" className="mt-1" />
                     </div>
                   </div>
                 </div>
               </div>
 
               <CodeBlock
-                code={`// 크기 변형
-<Label size="sm">작은 라벨</Label>
-<Label size="default">기본 라벨</Label>
-<Label size="lg">큰 라벨</Label>
+                code={`// Size Variants
+<Label size="sm">Small Label</Label>
+<Label size="default">Default Label</Label>
+<Label size="lg">Large Label</Label>
 
-// 스타일 변형
-<Label variant="default">기본 스타일</Label>
-<Label variant="muted">음소거 스타일</Label>
-<Label variant="success">성공 스타일</Label>
-<Label variant="warning">경고 스타일</Label>
+// Style Variants
+<Label variant="default">Default Style</Label>
+<Label variant="muted">Muted Style</Label>
+<Label variant="success">Success Style</Label>
+<Label variant="warning">Warning Style</Label>
 
-// 상태 변형
-<Label required>필수 필드</Label>
-<Label error errorMessage="에러 메시지">에러 상태</Label>
-<Label helpText="도움말 텍스트">도움말 포함</Label>`}
+// State Variants
+<Label required>Required Field</Label>
+<Label error errorMessage="Error message">Error State</Label>
+<Label helpText="Help text">Help Text Included</Label>`}
                 codeKey="basic-labels"
               />
             </CardContent>
@@ -219,20 +219,20 @@ export function LabelComponentPage() {
           {/* Form Components */}
           <Card>
             <CardHeader>
-              <CardTitle>폼 컴포넌트와 함께 사용</CardTitle>
+              <CardTitle>Use with Form Components</CardTitle>
               <CardDescription>
-                다양한 폼 컴포넌트와 함께 사용하는 라벨 예제입니다.
+                Examples of using labels with various form components.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-4">
                   <div>
-                    <Label htmlFor="email" required>이메일 주소</Label>
+                    <Label htmlFor="email" required>Email Address</Label>
                     <Input 
                       id="email"
                       type="email" 
-                      placeholder="your@email.com" 
+                      placeholder="taenam356@outlook.com" 
                       className="mt-1" 
                     />
                   </div>
@@ -241,15 +241,15 @@ export function LabelComponentPage() {
                     <Label 
                       htmlFor="password" 
                       required
-                      helpText="최소 8자, 영문+숫자 조합"
+                      helpText="Minimum 8 characters, alphanumeric combination"
                     >
-                      비밀번호
+                      Password
                     </Label>
                     <div className="relative mt-1">
                       <Input 
                         id="password"
                         type={showPassword ? "text" : "password"}
-                        placeholder="비밀번호를 입력하세요"
+                        placeholder="Enter password"
                       />
                       <Button
                         type="button"
@@ -268,26 +268,26 @@ export function LabelComponentPage() {
                   </div>
 
                   <div>
-                    <Label htmlFor="bio">자기소개</Label>
+                    <Label htmlFor="bio">Bio</Label>
                     <Textarea 
                       id="bio"
-                      placeholder="자신을 소개해 주세요" 
+                      placeholder="Introduce yourself" 
                       className="mt-1"
                       rows={3}
                     />
                   </div>
 
                   <div>
-                    <Label htmlFor="country">국가 선택</Label>
+                    <Label htmlFor="country">Select Country</Label>
                     <Select>
                       <SelectTrigger className="mt-1">
-                        <SelectValue placeholder="국가를 선택하세요" />
+                        <SelectValue placeholder="Select a country" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="kr">대한민국</SelectItem>
-                        <SelectItem value="us">미국</SelectItem>
-                        <SelectItem value="jp">일본</SelectItem>
-                        <SelectItem value="cn">중국</SelectItem>
+                        <SelectItem value="kr">Korea</SelectItem>
+                        <SelectItem value="us">United States</SelectItem>
+                        <SelectItem value="jp">Japan</SelectItem>
+                        <SelectItem value="cn">China</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
@@ -301,25 +301,25 @@ export function LabelComponentPage() {
                       required
                       className="text-sm font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                     >
-                      이용약관에 동의합니다
+                      I agree to the terms of service
                     </Label>
                   </div>
 
                   <div className="flex items-center space-x-2">
                     <Switch id="notifications" />
-                    <Label htmlFor="notifications">알림 받기</Label>
+                    <Label htmlFor="notifications">Receive notifications</Label>
                   </div>
 
                   <div>
-                    <Label>선호하는 연락 방법</Label>
+                    <Label>Preferred Contact Method</Label>
                     <RadioGroup defaultValue="email" className="mt-2">
                       <div className="flex items-center space-x-2">
                         <RadioGroupItem value="email" id="contact-email" />
-                        <Label htmlFor="contact-email">이메일</Label>
+                        <Label htmlFor="contact-email">taenam356@outlook.com</Label>
                       </div>
                       <div className="flex items-center space-x-2">
                         <RadioGroupItem value="phone" id="contact-phone" />
-                        <Label htmlFor="contact-phone">전화</Label>
+                        <Label htmlFor="contact-phone">Phone</Label>
                       </div>
                       <div className="flex items-center space-x-2">
                         <RadioGroupItem value="sms" id="contact-sms" />
@@ -331,40 +331,40 @@ export function LabelComponentPage() {
                   <div>
                     <Label 
                       variant="warning"
-                      helpText="이 정보는 공개적으로 표시됩니다"
+                      helpText="This information will be displayed publicly"
                     >
-                      공개 프로필명
+                      Public Profile Name
                     </Label>
-                    <Input placeholder="표시될 이름" className="mt-1" />
+                    <Input placeholder="Display name" className="mt-1" />
                   </div>
                 </div>
               </div>
 
               <CodeBlock
-                code={`// 기본 입력 필드
-<Label htmlFor="email" required>이메일 주소</Label>
-<Input id="email" type="email" placeholder="your@email.com" />
+                code={`// Basic Input Field
+<Label htmlFor="email" required>Email Address</Label>
+<Input id="email" type="email" placeholder="taenam356@outlook.com" />
 
-// 도움말이 있는 필드
+// Field with Help Text
 <Label 
   htmlFor="password" 
   required
-  helpText="최소 8자, 영문+숫자 조합"
+  helpText="Minimum 8 characters, alphanumeric combination"
 >
-  비밀번호
+  Password
 </Label>
 <Input id="password" type="password" />
 
-// 체크박스와 함께
+// Use with Checkbox
 <Checkbox id="terms" />
-<Label htmlFor="terms" required>이용약관에 동의합니다</Label>
+<Label htmlFor="terms" required>I agree to the terms of service</Label>
 
-// 라디오 그룹과 함께
-<Label>선호하는 연락 방법</Label>
+// Use with Radio Group
+<Label>Preferred Contact Method</Label>
 <RadioGroup defaultValue="email">
   <div className="flex items-center space-x-2">
     <RadioGroupItem value="email" id="contact-email" />
-    <Label htmlFor="contact-email">이메일</Label>
+    <Label htmlFor="contact-email">Email</Label>
   </div>
 </RadioGroup>`}
                 codeKey="form-components"
@@ -375,9 +375,9 @@ export function LabelComponentPage() {
           {/* Complex Forms */}
           <Card>
             <CardHeader>
-              <CardTitle>복잡한 폼 예제</CardTitle>
+              <CardTitle>Complex Form Example</CardTitle>
               <CardDescription>
-                실제 사용 사례에서의 라벨 활용 예제입니다.
+                Examples of label usage in real-world scenarios.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
@@ -385,29 +385,29 @@ export function LabelComponentPage() {
                 <div className="space-y-4">
                   <h4 className="font-medium flex items-center gap-2">
                     <User className="w-4 h-4" />
-                    개인 정보
+                    Personal Information
                   </h4>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
-                      <Label htmlFor="firstName" required>이름</Label>
-                      <Input id="firstName" placeholder="홍길동" className="mt-1" />
+                      <Label htmlFor="firstName" required>First Name</Label>
+                      <Input id="firstName" placeholder="Gildong Hong" className="mt-1" />
                     </div>
                     <div>
-                      <Label htmlFor="lastName" required>성</Label>
-                      <Input id="lastName" placeholder="홍" className="mt-1" />
+                      <Label htmlFor="lastName" required>Last Name</Label>
+                      <Input id="lastName" placeholder="Hong" className="mt-1" />
                     </div>
                   </div>
                   <div>
                     <Label 
                       htmlFor="birthDate" 
-                      helpText="생년월일은 본인 인증에 사용됩니다"
+                      helpText="Birth date is used for identity verification"
                     >
-                      생년월일
+                      Birth Date
                     </Label>
                     <Input id="birthDate" type="date" className="mt-1" />
                   </div>
                   <div>
-                    <Label htmlFor="phone" required>전화번호</Label>
+                    <Label htmlFor="phone" required>Phone Number</Label>
                     <Input id="phone" placeholder="010-1234-5678" className="mt-1" />
                   </div>
                 </div>
@@ -415,19 +415,19 @@ export function LabelComponentPage() {
                 <div className="space-y-4">
                   <h4 className="font-medium flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
-                    주소 정보
+                    Address Information
                   </h4>
                   <div>
-                    <Label htmlFor="address" required>주소</Label>
-                    <Input id="address" placeholder="서울특별시 강남구..." className="mt-1" />
+                    <Label htmlFor="address" required>Address</Label>
+                    <Input id="address" placeholder="Seoul, South Korea..." className="mt-1" />
                   </div>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
-                      <Label htmlFor="city" required>도시</Label>
-                      <Input id="city" placeholder="서울" className="mt-1" />
+                      <Label htmlFor="city" required>City</Label>
+                      <Input id="city" placeholder="Seoul" className="mt-1" />
                     </div>
                     <div>
-                      <Label htmlFor="zipCode" required>우편번호</Label>
+                      <Label htmlFor="zipCode" required>Zip Code</Label>
                       <Input id="zipCode" placeholder="12345" className="mt-1" />
                     </div>
                   </div>
@@ -435,13 +435,13 @@ export function LabelComponentPage() {
                     <Label 
                       htmlFor="specialInstructions"
                       variant="muted"
-                      helpText="배송 시 특별한 요청사항이 있으면 입력해 주세요"
+                      helpText="If you have special requests for delivery, please enter them"
                     >
-                      배송 요청사항
+                      Delivery Instructions
                     </Label>
                     <Textarea 
                       id="specialInstructions"
-                      placeholder="예: 부재 시 경비실에 맡겨주세요" 
+                      placeholder="e.g., Please leave it at the guardhouse" 
                       className="mt-1"
                       rows={2}
                     />
@@ -452,46 +452,46 @@ export function LabelComponentPage() {
               <div className="border-t pt-6">
                 <h4 className="font-medium flex items-center gap-2 mb-4">
                   <Settings className="w-4 h-4" />
-                  환경 설정
+                  Settings
                 </h4>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-4">
                     <div className="flex items-center justify-between">
-                      <Label htmlFor="emailNotifications">이메일 알림</Label>
+                      <Label htmlFor="emailNotifications">Email Notifications</Label>
                       <Switch id="emailNotifications" />
                     </div>
                     <div className="flex items-center justify-between">
-                      <Label htmlFor="smsNotifications">SMS 알림</Label>
+                      <Label htmlFor="smsNotifications">SMS Notifications</Label>
                       <Switch id="smsNotifications" />
                     </div>
                     <div className="flex items-center justify-between">
-                      <Label htmlFor="pushNotifications">푸시 알림</Label>
+                      <Label htmlFor="pushNotifications">Push Notifications</Label>
                       <Switch id="pushNotifications" />
                     </div>
                   </div>
                   <div className="space-y-4">
                     <div>
-                      <Label>언어 설정</Label>
+                      <Label>Language Settings</Label>
                       <Select>
                         <SelectTrigger className="mt-1">
-                          <SelectValue placeholder="언어 선택" />
+                          <SelectValue placeholder="Select language" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="ko">한국어</SelectItem>
+                          <SelectItem value="ko">Korean</SelectItem>
                           <SelectItem value="en">English</SelectItem>
-                          <SelectItem value="ja">日本語</SelectItem>
+                          <SelectItem value="ja">Japanese</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
                     <div>
                       <Label 
                         variant="warning"
-                        helpText="프로필 삭제 시 모든 데이터가 영구 삭제됩니다"
+                        helpText="All data will be permanently deleted when you delete your profile"
                       >
-                        위험 구역
+                        Dangerous Area
                       </Label>
                       <Button variant="destructive" className="mt-2 w-full">
-                        프로필 삭제
+                        Delete Profile
                       </Button>
                     </div>
                   </div>
@@ -505,9 +505,9 @@ export function LabelComponentPage() {
         <TabsContent value="patterns" className="space-y-8">
           <Card>
             <CardHeader>
-              <CardTitle>라벨 패턴 및 모범 사례</CardTitle>
+              <CardTitle>Label Patterns and Best Practices</CardTitle>
               <CardDescription>
-                효과적인 라벨 사용을 위한 디자인 패턴과 모범 사례입니다.
+                Design patterns and best practices for effective label usage.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
@@ -515,50 +515,50 @@ export function LabelComponentPage() {
                 <div className="space-y-4">
                   <h4 className="font-medium text-green-700 flex items-center gap-2">
                     <CheckCircle className="w-4 h-4" />
-                    권장 패턴
+                    Recommended Pattern
                   </h4>
                   <div className="space-y-3">
                     <div className="p-3 border rounded-lg">
-                      <Label htmlFor="good-example1" required>명확한 라벨 텍스트</Label>
+                      <Label htmlFor="good-example1" required>Clear Label Text</Label>
                       <Input id="good-example1" placeholder="example@email.com" className="mt-1" />
-                      <p className="text-xs text-muted-foreground mt-1">✓ 구체적이고 이해하기 쉬운 라벨</p>
+                      <p className="text-xs text-muted-foreground mt-1">✓ Specific and easy-to-understand label</p>
                     </div>
                     <div className="p-3 border rounded-lg">
                       <Label 
                         htmlFor="good-example2" 
-                        helpText="비밀번호는 8자 이상이어야 합니다"
+                        helpText="Password must be at least 8 characters"
                       >
-                        비밀번호
+                        Password
                       </Label>
                       <Input id="good-example2" type="password" className="mt-1" />
-                      <p className="text-xs text-muted-foreground mt-1">✓ 유용한 도움말 텍스트 제공</p>
+                      <p className="text-xs text-muted-foreground mt-1">✓ Provide useful help text</p>
                     </div>
                     <div className="p-3 border rounded-lg">
-                      <Label htmlFor="good-example3" required>필수 필드 표시</Label>
+                      <Label htmlFor="good-example3" required>Required Field</Label>
                       <Input id="good-example3" className="mt-1" />
-                      <p className="text-xs text-muted-foreground mt-1">✓ 필수 필드에 별표(*) 표시</p>
+                      <p className="text-xs text-muted-foreground mt-1">✓ Mark required fields with an asterisk (*)</p>
                     </div>
                   </div>
                 </div>
                 <div className="space-y-4">
                   <h4 className="font-medium text-red-700 flex items-center gap-2">
                     <AlertTriangle className="w-4 h-4" />
-                    피해야 할 패턴
+                    Patterns to Avoid
                   </h4>
                   <div className="space-y-3">
                     <div className="p-3 border rounded-lg bg-red-50 dark:bg-red-950/20">
-                      <Label htmlFor="bad-example1">입력</Label>
-                      <Input id="bad-example1" placeholder="여기에 입력" className="mt-1" />
-                      <p className="text-xs text-red-600 mt-1">✗ 모호하고 불명확한 라벨</p>
+                      <Label htmlFor="bad-example1">Input</Label>
+                      <Input id="bad-example1" placeholder="Enter here" className="mt-1" />
+                      <p className="text-xs text-red-600 mt-1">✗ Vague and unclear label</p>
                     </div>
                     <div className="p-3 border rounded-lg bg-red-50 dark:bg-red-950/20">
-                      <Input placeholder="이메일 주소" />
-                      <p className="text-xs text-red-600 mt-1">✗ 라벨 없이 placeholder만 사용</p>
+                      <Input placeholder="Email address" />
+                      <p className="text-xs text-red-600 mt-1">✗ Use placeholder only instead of label</p>
                     </div>
                     <div className="p-3 border rounded-lg bg-red-50 dark:bg-red-950/20">
-                      <Label htmlFor="bad-example3" variant="destructive">!!! 매우 중요한 필드 !!!</Label>
+                      <Label htmlFor="bad-example3" variant="destructive">!!! Very Important Field !!!</Label>
                       <Input id="bad-example3" className="mt-1" />
-                      <p className="text-xs text-red-600 mt-1">✗ 과도한 강조나 감정적 표현</p>
+                      <p className="text-xs text-red-600 mt-1">✗ Excessive emphasis or emotional expression</p>
                     </div>
                   </div>
                 </div>
@@ -568,24 +568,24 @@ export function LabelComponentPage() {
 
           <Card>
             <CardHeader>
-              <CardTitle>에러 처리 패턴</CardTitle>
+              <CardTitle>Error Handling Patterns</CardTitle>
               <CardDescription>
-                폼 검증 오류를 효과적으로 표시하는 방법입니다.
+                Methods for displaying form validation errors effectively.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="grid gap-6 md:grid-cols-2">
                 <div className="space-y-4">
-                  <h4 className="font-medium">검증 오류 예제</h4>
+                  <h4 className="font-medium">Error Example</h4>
                   <div className="space-y-4">
                     <div>
                       <Label 
                         htmlFor="error-email"
                         required
                         error
-                        errorMessage="유효한 이메일 주소를 입력해 주세요"
+                        errorMessage="Please enter a valid email address"
                       >
-                        이메일 주소
+                        Email Address
                       </Label>
                       <Input 
                         id="error-email"
@@ -599,9 +599,9 @@ export function LabelComponentPage() {
                         htmlFor="error-password"
                         required
                         error
-                        errorMessage="비밀번호는 최소 8자 이상이어야 합니다"
+                        errorMessage="Password must be at least 8 characters"
                       >
-                        비밀번호
+                        Password
                       </Label>
                       <Input 
                         id="error-password"
@@ -615,9 +615,9 @@ export function LabelComponentPage() {
                         htmlFor="error-required"
                         required
                         error
-                        errorMessage="이 필드는 필수입니다"
+                        errorMessage="This field is required"
                       >
-                        필수 필드
+                        Required Field
                       </Label>
                       <Input 
                         id="error-required"
@@ -627,15 +627,15 @@ export function LabelComponentPage() {
                   </div>
                 </div>
                 <div className="space-y-4">
-                  <h4 className="font-medium">성공 상태 예제</h4>
+                  <h4 className="font-medium">Success State Example</h4>
                   <div className="space-y-4">
                     <div>
                       <Label 
                         htmlFor="success-email"
                         variant="success"
-                        helpText="이메일 주소가 확인되었습니다"
+                        helpText="Email address has been verified"
                       >
-                        이메일 주소
+                        Email Address
                       </Label>
                       <Input 
                         id="success-email"
@@ -648,9 +648,9 @@ export function LabelComponentPage() {
                       <Label 
                         htmlFor="success-username"
                         variant="success"
-                        helpText="사용 가능한 사용자명입니다"
+                        helpText="Available username"
                       >
-                        사용자명
+                        Username
                       </Label>
                       <Input 
                         id="success-username"
@@ -662,9 +662,9 @@ export function LabelComponentPage() {
                       <Label 
                         htmlFor="success-password"
                         variant="success"
-                        helpText="강력한 비밀번호입니다"
+                        helpText="Strong password"
                       >
-                        비밀번호
+                        Password
                       </Label>
                       <Input 
                         id="success-password"
@@ -678,14 +678,14 @@ export function LabelComponentPage() {
               </div>
 
               <CodeBlock
-                code={`// 에러 상태
+                code={`// Error State
 <Label 
   htmlFor="email"
   required
   error
-  errorMessage="유효한 이메일 주소를 입력해 주세요"
+  errorMessage="Please enter a valid email address"
 >
-  이메일 주소
+  Email Address
 </Label>
 <Input 
   id="email"
@@ -693,13 +693,13 @@ export function LabelComponentPage() {
   defaultValue="invalid-email"
 />
 
-// 성공 상태
+// Success State
 <Label 
   htmlFor="username"
   variant="success"
-  helpText="사용 가능한 사용자명입니다"
+  helpText="Available username"
 >
-  사용자명
+  Username
 </Label>
 <Input 
   id="username"
@@ -713,26 +713,26 @@ export function LabelComponentPage() {
 
           <Card>
             <CardHeader>
-              <CardTitle>국제화 및 다국어 지원</CardTitle>
+              <CardTitle>Internationalization and Multilingual Support</CardTitle>
               <CardDescription>
-                다국어 환경에서의 라벨 사용 패턴입니다.
+                Patterns for using labels in multilingual environments.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="grid gap-6 md:grid-cols-3">
                 <div className="space-y-4">
-                  <h4 className="font-medium">한국어</h4>
+                  <h4 className="font-medium">Korean</h4>
                   <div className="space-y-3">
                     <div>
-                      <Label htmlFor="ko-name" required>성명</Label>
-                      <Input id="ko-name" placeholder="홍길동" className="mt-1" />
+                      <Label htmlFor="ko-name" required>Full Name</Label>
+                      <Input id="ko-name" placeholder="Gildong Hong" className="mt-1" />
                     </div>
                     <div>
                       <Label 
                         htmlFor="ko-phone"
-                        helpText="휴대폰 번호를 입력해 주세요"
+                        helpText="Please enter your phone number"
                       >
-                        전화번호
+                        Phone Number
                       </Label>
                       <Input id="ko-phone" placeholder="010-1234-5678" className="mt-1" />
                     </div>
@@ -757,18 +757,18 @@ export function LabelComponentPage() {
                   </div>
                 </div>
                 <div className="space-y-4">
-                  <h4 className="font-medium">日本語</h4>
+                  <h4 className="font-medium">Japanese</h4>
                   <div className="space-y-3">
                     <div>
-                      <Label htmlFor="jp-name" required>氏名</Label>
-                      <Input id="jp-name" placeholder="田中太郎" className="mt-1" />
+                      <Label htmlFor="jp-name" required>Surname</Label>
+                      <Input id="jp-name" placeholder="Taro Tanaka" className="mt-1" />
                     </div>
                     <div>
                       <Label 
                         htmlFor="jp-phone"
-                        helpText="電話番号を入力してください"
+                        helpText="Please enter your phone number"
                       >
-                        電話番号
+                        Phone Number
                       </Label>
                       <Input id="jp-phone" placeholder="090-1234-5678" className="mt-1" />
                     </div>
@@ -783,9 +783,9 @@ export function LabelComponentPage() {
         <TabsContent value="usage" className="space-y-8">
           <Card>
             <CardHeader>
-              <CardTitle>사용 가이드라인</CardTitle>
+              <CardTitle>Usage Guidelines</CardTitle>
               <CardDescription>
-                효과적인 Label 사용을 위한 모범 사례
+                Best practices for effective label usage.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
@@ -793,29 +793,29 @@ export function LabelComponentPage() {
                 <div className="space-y-4">
                   <h4 className="text-sm font-medium text-green-700 flex items-center gap-2">
                     <CheckCircle className="w-4 h-4" />
-                    권장사항
+                    Recommendations
                   </h4>
                   <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• 명확하고 구체적인 라벨 텍스트 사용</li>
-                    <li>• 필수 필드에는 required 속성 활용</li>
-                    <li>• 도움말 텍스트로 추가 정보 제공</li>
-                    <li>• htmlFor로 폼 컨트롤과 연결</li>
-                    <li>• 일관된 라벨 크기와 스타일 유지</li>
-                    <li>• 에러 메시지는 구체적이고 실행 가능하게</li>
+                    <li>• Use clear and specific label text</li>
+                    <li>• Utilize the required attribute for required fields</li>
+                    <li>• Provide additional information with help text</li>
+                    <li>• Connect form controls with htmlFor</li>
+                    <li>• Maintain consistent label size and style</li>
+                    <li>• Error messages should be specific and actionable</li>
                   </ul>
                 </div>
                 <div className="space-y-4">
                   <h4 className="text-sm font-medium text-red-700 flex items-center gap-2">
                     <AlertTriangle className="w-4 h-4" />
-                    피해야 할 것
+                    Things to Avoid
                   </h4>
                   <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• 모호하거나 기술적인 용어 사용</li>
-                    <li>• placeholder만으로 라벨 대체</li>
-                    <li>• 과도한 강조나 감정적 표현</li>
-                    <li>• 불필요하게 긴 라벨 텍스트</li>
-                    <li>• 일관성 없는 스타일 적용</li>
-                    <li>• 접근성 속성 누락</li>
+                    <li>• Use vague or technical terms</li>
+                    <li>• Replace label with placeholder only</li>
+                    <li>• Excessive emphasis or emotional expression</li>
+                    <li>• Unnecessary long label text</li>
+                    <li>• Inconsistent style application</li>
+                    <li>• Missing accessibility attributes</li>
                   </ul>
                 </div>
               </div>
@@ -824,38 +824,38 @@ export function LabelComponentPage() {
 
           <Card>
             <CardHeader>
-              <CardTitle>접근성</CardTitle>
+              <CardTitle>Accessibility</CardTitle>
               <CardDescription>
-                모든 사용자가 Label을 효과적으로 사용할 수 있도록 하는 지침
+                Guidelines to ensure all users can effectively use labels.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="space-y-4">
                 <div>
-                  <h5 className="font-medium mb-2">스크린 리더 지원</h5>
+                  <h5 className="font-medium mb-2">Screen Reader Support</h5>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• htmlFor 속성으로 연관된 컨트롤 명시</li>
-                    <li>• aria-label 또는 aria-labelledby 활용</li>
-                    <li>• 필수 필드는 aria-required 속성 추가</li>
-                    <li>• 에러 상태는 aria-invalid 및 aria-describedby</li>
+                    <li>• Explicitly state associated controls with htmlFor</li>
+                    <li>• Utilize aria-label or aria-labelledby</li>
+                    <li>• Add aria-required attribute for required fields</li>
+                    <li>• Add aria-invalid and aria-describedby for error states</li>
                   </ul>
                 </div>
                 <div>
-                  <h5 className="font-medium mb-2">시각적 접근성</h5>
+                  <h5 className="font-medium mb-2">Visual Accessibility</h5>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• 충분한 색상 대비 확보 (4.5:1 이상)</li>
-                    <li>• 색상에만 의존하지 않는 정보 전달</li>
-                    <li>• 명확한 포커스 표시</li>
-                    <li>• 적절한 폰트 크기와 간격</li>
+                    <li>• Ensure sufficient color contrast (4.5:1 or higher)</li>
+                    <li>• Communicate information without relying solely on color</li>
+                    <li>• Clear focus indication</li>
+                    <li>• Appropriate font size and spacing</li>
                   </ul>
                 </div>
                 <div>
-                  <h5 className="font-medium mb-2">키보드 탐색</h5>
+                  <h5 className="font-medium mb-2">Keyboard Navigation</h5>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• 라벨 클릭 시 연관된 컨트롤로 포커스 이동</li>
-                    <li>• 논리적인 탭 순서 구성</li>
-                    <li>• 체크박스나 라디오 버튼과의 올바른 연결</li>
-                    <li>• 에러 필드로의 직접 탐색 지원</li>
+                    <li>• Clicking a label moves focus to the associated control</li>
+                    <li>• Construct a logical tab order</li>
+                    <li>• Correctly connect with checkboxes and radio buttons</li>
+                    <li>• Direct navigation to error fields supported</li>
                   </ul>
                 </div>
               </div>
@@ -864,37 +864,37 @@ export function LabelComponentPage() {
 
           <Card>
             <CardHeader>
-              <CardTitle>언제 사용하나요?</CardTitle>
+              <CardTitle>When to Use?</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="grid gap-4 md:grid-cols-3">
                 <div className="p-4 border rounded-lg">
-                  <h5 className="font-medium mb-2 text-green-700">Label 사용</h5>
+                  <h5 className="font-medium mb-2 text-green-700">Label Usage</h5>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• 폼 입력 필드</li>
-                    <li>• 체크박스/라디오</li>
-                    <li>• 스위치 컨트롤</li>
-                    <li>• 선택 드롭다운</li>
-                    <li>• 텍스트 영역</li>
-                    <li>• 슬라이더</li>
+                    <li>• Form input fields</li>
+                    <li>• Checkboxes/Radio</li>
+                    <li>• Switch controls</li>
+                    <li>• Dropdown selections</li>
+                    <li>• Text areas</li>
+                    <li>• Sliders</li>
                   </ul>
                 </div>
                 <div className="p-4 border rounded-lg">
-                  <h5 className="font-medium mb-2">대안 표현</h5>
+                  <h5 className="font-medium mb-2">Alternative Expressions</h5>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• <strong>Heading:</strong> 섹션 제목</li>
-                    <li>• <strong>Caption:</strong> 이미지 설명</li>
-                    <li>• <strong>Text:</strong> 일반 텍스트</li>
-                    <li>• <strong>Tooltip:</strong> 도움말 팝업</li>
+                    <li>• <strong>Heading:</strong> Section title</li>
+                    <li>• <strong>Caption:</strong> Image description</li>
+                    <li>• <strong>Text:</strong> General text</li>
+                    <li>• <strong>Tooltip:</strong> Help pop-up</li>
                   </ul>
                 </div>
                 <div className="p-4 border rounded-lg">
-                  <h5 className="font-medium mb-2 text-red-700">피해야 할 용도</h5>
+                  <h5 className="font-medium mb-2 text-red-700">Things to Avoid</h5>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• 단순 텍스트 표시</li>
-                    <li>• 제목이나 헤딩</li>
-                    <li>• 장식적 텍스트</li>
-                    <li>• 연관 컨트롤 없는 경우</li>
+                    <li>• Simple text display</li>
+                    <li>• Title or heading</li>
+                    <li>• Decorative text</li>
+                    <li>• Cases where no associated control exists</li>
                   </ul>
                 </div>
               </div>
@@ -906,9 +906,9 @@ export function LabelComponentPage() {
         <TabsContent value="code" className="space-y-8">
           <Card>
             <CardHeader>
-              <CardTitle>컴포넌트 API</CardTitle>
+              <CardTitle>Component API</CardTitle>
               <CardDescription>
-                Label 컴포넌트의 속성과 설정 옵션
+                Properties and settings for the Label component.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
@@ -918,10 +918,10 @@ export function LabelComponentPage() {
                   <table className="w-full text-sm border-collapse">
                     <thead>
                       <tr className="border-b">
-                        <th className="text-left p-2 font-medium">속성</th>
-                        <th className="text-left p-2 font-medium">타입</th>
-                        <th className="text-left p-2 font-medium">기본값</th>
-                        <th className="text-left p-2 font-medium">설명</th>
+                        <th className="text-left p-2 font-medium">Property</th>
+                        <th className="text-left p-2 font-medium">Type</th>
+                        <th className="text-left p-2 font-medium">Default</th>
+                        <th className="text-left p-2 font-medium">Description</th>
                       </tr>
                     </thead>
                     <tbody className="text-muted-foreground">
@@ -929,43 +929,43 @@ export function LabelComponentPage() {
                         <td className="p-2 font-mono">size</td>
                         <td className="p-2">"sm" | "default" | "lg"</td>
                         <td className="p-2">"default"</td>
-                        <td className="p-2">라벨의 크기</td>
+                        <td className="p-2">Label size</td>
                       </tr>
                       <tr className="border-b">
                         <td className="p-2 font-mono">variant</td>
                         <td className="p-2">"default" | "muted" | "destructive" | "success" | "warning"</td>
                         <td className="p-2">"default"</td>
-                        <td className="p-2">라벨의 스타일 변형</td>
+                        <td className="p-2">Label style variant</td>
                       </tr>
                       <tr className="border-b">
                         <td className="p-2 font-mono">required</td>
                         <td className="p-2">boolean</td>
                         <td className="p-2">false</td>
-                        <td className="p-2">필수 필드 표시 (별표)</td>
+                        <td className="p-2">Mark as required field (asterisk)</td>
                       </tr>
                       <tr className="border-b">
                         <td className="p-2 font-mono">error</td>
                         <td className="p-2">boolean</td>
                         <td className="p-2">false</td>
-                        <td className="p-2">에러 상태 표시</td>
+                        <td className="p-2">Mark as error state</td>
                       </tr>
                       <tr className="border-b">
                         <td className="p-2 font-mono">helpText</td>
                         <td className="p-2">string</td>
                         <td className="p-2">-</td>
-                        <td className="p-2">도움말 텍스트</td>
+                        <td className="p-2">Help text</td>
                       </tr>
                       <tr className="border-b">
                         <td className="p-2 font-mono">errorMessage</td>
                         <td className="p-2">string</td>
                         <td className="p-2">-</td>
-                        <td className="p-2">에러 메시지</td>
+                        <td className="p-2">Error message</td>
                       </tr>
                       <tr className="border-b">
                         <td className="p-2 font-mono">htmlFor</td>
                         <td className="p-2">string</td>
                         <td className="p-2">-</td>
-                        <td className="p-2">연관된 폼 컨트롤 ID</td>
+                        <td className="p-2">Associated form control ID</td>
                       </tr>
                     </tbody>
                   </table>
@@ -976,94 +976,94 @@ export function LabelComponentPage() {
 
           <Card>
             <CardHeader>
-              <CardTitle>설치 및 가져오기</CardTitle>
+              <CardTitle>Installation and Import</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <CodeBlock
-                title="가져오기"
+                title="Import"
                 code={`import { Label } from "./components/ui/label"`}
                 codeKey="import"
               />
               
               <CodeBlock
-                title="기본 사용법"
-                code={`// 기본 라벨
-<Label htmlFor="email">이메일 주소</Label>
+                title="Basic Usage"
+                code={`// Basic Label
+<Label htmlFor="email">Email Address</Label>
 <Input id="email" type="email" />
 
-// 필수 필드
-<Label htmlFor="password" required>비밀번호</Label>
+// Required Field
+<Label htmlFor="password" required>Password</Label>
 <Input id="password" type="password" />
 
-// 도움말 포함
+// Field with Help Text
 <Label 
   htmlFor="username"
-  helpText="3-20자의 영문, 숫자 조합"
+  helpText="3-20 characters, alphanumeric combination"
 >
-  사용자명
+  Username
 </Label>
 <Input id="username" />
 
-// 에러 상태
+// Error State
 <Label 
   htmlFor="confirmPassword"
   required
   error
-  errorMessage="비밀번호가 일치하지 않습니다"
+  errorMessage="Passwords do not match"
 >
-  비밀번호 확인
+  Confirm Password
 </Label>
 <Input id="confirmPassword" type="password" />`}
                 codeKey="basic-usage"
               />
 
               <CodeBlock
-                title="크기 변형"
-                code={`<Label size="sm">작은 라벨</Label>
-<Label size="default">기본 라벨</Label>
-<Label size="lg">큰 라벨</Label>`}
+                title="Size Variants"
+                code={`<Label size="sm">Small Label</Label>
+<Label size="default">Default Label</Label>
+<Label size="lg">Large Label</Label>`}
                 codeKey="size-variants"
               />
 
               <CodeBlock
-                title="스타일 변형"
-                code={`<Label variant="default">기본 스타일</Label>
-<Label variant="muted">음소거 스타일</Label>
-<Label variant="success">성공 스타일</Label>
-<Label variant="warning">경고 스타일</Label>
-<Label variant="destructive">오류 스타일</Label>`}
+                title="Style Variants"
+                code={`<Label variant="default">Default Style</Label>
+<Label variant="muted">Muted Style</Label>
+<Label variant="success">Success Style</Label>
+<Label variant="warning">Warning Style</Label>
+<Label variant="destructive">Error Style</Label>`}
                 codeKey="style-variants"
               />
 
               <CodeBlock
-                title="체크박스와 함께 사용"
+                title="Use with Checkbox"
                 code={`<div className="flex items-center space-x-2">
   <Checkbox id="terms" />
   <Label htmlFor="terms" required>
-    이용약관에 동의합니다
+    I agree to the terms of service
   </Label>
 </div>`}
                 codeKey="checkbox-usage"
               />
 
               <CodeBlock
-                title="라디오 그룹과 함께 사용"
-                code={`<Label>선호하는 연락 방법</Label>
+                title="Use with Radio Group"
+                code={`<Label>Preferred Contact Method</Label>
 <RadioGroup defaultValue="email">
   <div className="flex items-center space-x-2">
     <RadioGroupItem value="email" id="contact-email" />
-    <Label htmlFor="contact-email">이메일</Label>
+    <Label htmlFor="contact-email">Email</Label>
   </div>
   <div className="flex items-center space-x-2">
     <RadioGroupItem value="phone" id="contact-phone" />
-    <Label htmlFor="contact-phone">전화</Label>
+    <Label htmlFor="contact-phone">Phone</Label>
   </div>
 </RadioGroup>`}
                 codeKey="radio-usage"
               />
 
               <CodeBlock
-                title="폼 검증과 함께"
+                title="Form Validation"
                 code={`const [errors, setErrors] = useState({});
 
 <Label 
@@ -1072,7 +1072,7 @@ export function LabelComponentPage() {
   error={!!errors.email}
   errorMessage={errors.email}
 >
-  이메일 주소
+  Email Address
 </Label>
 <Input 
   id="email"
