@@ -16,74 +16,74 @@ export function TokensSection() {
   };
 
   const semanticColorTokens = [
-    { name: 'Background', value: 'var(--background)', light: '#ffffff', dark: 'oklch(0.145 0 0)', description: '기본 배경색' },
-    { name: 'Foreground', value: 'var(--foreground)', light: 'oklch(0.145 0 0)', dark: 'oklch(0.985 0 0)', description: '기본 텍스트 색상' },
-    { name: 'Primary', value: 'var(--primary)', light: '#030213', dark: 'oklch(0.985 0 0)', description: '주요 브랜드 색상 및 CTA 요소' },
-    { name: 'Primary Foreground', value: 'var(--primary-foreground)', light: 'oklch(1 0 0)', dark: 'oklch(0.205 0 0)', description: 'Primary 위의 텍스트' },
-    { name: 'Secondary', value: 'var(--secondary)', light: 'oklch(0.95 0.0058 264.53)', dark: 'oklch(0.269 0 0)', description: '보조 액션 및 배경' },
-    { name: 'Secondary Foreground', value: 'var(--secondary-foreground)', light: '#030213', dark: 'oklch(0.985 0 0)', description: 'Secondary 위의 텍스트' },
-    { name: 'Accent', value: 'var(--accent)', light: '#e9ebef', dark: 'oklch(0.269 0 0)', description: '강조 및 호버 상태' },
-    { name: 'Accent Foreground', value: 'var(--accent-foreground)', light: '#030213', dark: 'oklch(0.985 0 0)', description: 'Accent 위의 텍스트' },
-    { name: 'Muted', value: 'var(--muted)', light: '#ececf0', dark: 'oklch(0.269 0 0)', description: '비활성 요소 및 구분선' },
-    { name: 'Muted Foreground', value: 'var(--muted-foreground)', light: '#717182', dark: 'oklch(0.708 0 0)', description: 'Muted 위의 텍스트' },
-    { name: 'Destructive', value: 'var(--destructive)', light: '#d4183d', dark: 'oklch(0.396 0.141 25.723)', description: '오류 및 위험한 액션' },
-    { name: 'Destructive Foreground', value: 'var(--destructive-foreground)', light: '#ffffff', dark: 'oklch(0.637 0.237 25.331)', description: 'Destructive 위의 텍스트' }
+    { name: 'Background', value: 'var(--background)', light: '#ffffff', dark: 'oklch(0.145 0 0)', description: 'Default background color' },
+    { name: 'Foreground', value: 'var(--foreground)', light: 'oklch(0.145 0 0)', dark: 'oklch(0.985 0 0)', description: 'Default text color' },
+    { name: 'Primary', value: 'var(--primary)', light: '#030213', dark: 'oklch(0.985 0 0)', description: 'Main brand color and CTA elements' },
+    { name: 'Primary Foreground', value: 'var(--primary-foreground)', light: 'oklch(1 0 0)', dark: 'oklch(0.205 0 0)', description: 'Text on Primary' },
+    { name: 'Secondary', value: 'var(--secondary)', light: 'oklch(0.95 0.0058 264.53)', dark: 'oklch(0.269 0 0)', description: 'Secondary actions and background' },
+    { name: 'Secondary Foreground', value: 'var(--secondary-foreground)', light: '#030213', dark: 'oklch(0.985 0 0)', description: 'Text on Secondary' },
+    { name: 'Accent', value: 'var(--accent)', light: '#e9ebef', dark: 'oklch(0.269 0 0)', description: 'Highlight and hover states' },
+    { name: 'Accent Foreground', value: 'var(--accent-foreground)', light: '#030213', dark: 'oklch(0.985 0 0)', description: 'Text on Accent' },
+    { name: 'Muted', value: 'var(--muted)', light: '#ececf0', dark: 'oklch(0.269 0 0)', description: 'Inactive elements and separators' },
+    { name: 'Muted Foreground', value: 'var(--muted-foreground)', light: '#717182', dark: 'oklch(0.708 0 0)', description: 'Text on Muted' },
+    { name: 'Destructive', value: 'var(--destructive)', light: '#d4183d', dark: 'oklch(0.396 0.141 25.723)', description: 'Errors and dangerous actions' },
+    { name: 'Destructive Foreground', value: 'var(--destructive-foreground)', light: '#ffffff', dark: 'oklch(0.637 0.237 25.331)', description: 'Text on Destructive' }
   ];
 
   const componentColorTokens = [
-    { name: 'Card', value: 'var(--card)', light: '#ffffff', dark: 'oklch(0.145 0 0)', description: '카드 배경색' },
-    { name: 'Card Foreground', value: 'var(--card-foreground)', light: 'oklch(0.145 0 0)', dark: 'oklch(0.985 0 0)', description: '카드 내 텍스트' },
-    { name: 'Popover', value: 'var(--popover)', light: 'oklch(1 0 0)', dark: 'oklch(0.145 0 0)', description: '팝오버 배경색' },
-    { name: 'Popover Foreground', value: 'var(--popover-foreground)', light: 'oklch(0.145 0 0)', dark: 'oklch(0.985 0 0)', description: '팝오버 내 텍스트' },
-    { name: 'Border', value: 'var(--border)', light: 'rgba(0, 0, 0, 0.1)', dark: 'oklch(0.269 0 0)', description: '경계선 색상' },
-    { name: 'Input', value: 'var(--input)', light: 'transparent', dark: 'oklch(0.269 0 0)', description: '입력 필드 경계선' },
-    { name: 'Input Background', value: 'var(--input-background)', light: '#f3f3f5', dark: 'oklch(0.269 0 0)', description: '입력 필드 배경색' },
-    { name: 'Switch Background', value: 'var(--switch-background)', light: '#cbced4', dark: 'oklch(0.269 0 0)', description: '스위치 배경색' },
-    { name: 'Ring', value: 'var(--ring)', light: 'oklch(0.708 0 0)', dark: 'oklch(0.439 0 0)', description: '포커스 링 색상' }
+    { name: 'Card', value: 'var(--card)', light: '#ffffff', dark: 'oklch(0.145 0 0)', description: 'Card background color' },
+    { name: 'Card Foreground', value: 'var(--card-foreground)', light: 'oklch(0.145 0 0)', dark: 'oklch(0.985 0 0)', description: 'Text inside card' },
+    { name: 'Popover', value: 'var(--popover)', light: 'oklch(1 0 0)', dark: 'oklch(0.145 0 0)', description: 'Popover background color' },
+    { name: 'Popover Foreground', value: 'var(--popover-foreground)', light: 'oklch(0.145 0 0)', dark: 'oklch(0.985 0 0)', description: 'Text inside popover' },
+    { name: 'Border', value: 'var(--border)', light: 'rgba(0, 0, 0, 0.1)', dark: 'oklch(0.269 0 0)', description: 'Border color' },
+    { name: 'Input', value: 'var(--input)', light: 'transparent', dark: 'oklch(0.269 0 0)', description: 'Input field border' },
+    { name: 'Input Background', value: 'var(--input-background)', light: '#f3f3f5', dark: 'oklch(0.269 0 0)', description: 'Input field background' },
+    { name: 'Switch Background', value: 'var(--switch-background)', light: '#cbced4', dark: 'oklch(0.269 0 0)', description: 'Switch background' },
+    { name: 'Ring', value: 'var(--ring)', light: 'oklch(0.708 0 0)', dark: 'oklch(0.439 0 0)', description: 'Focus ring color' }
   ];
 
   const sidebarColorTokens = [
-    { name: 'Sidebar', value: 'var(--sidebar)', light: 'oklch(0.985 0 0)', dark: 'oklch(0.205 0 0)', description: '사이드바 배경색' },
-    { name: 'Sidebar Foreground', value: 'var(--sidebar-foreground)', light: 'oklch(0.145 0 0)', dark: 'oklch(0.985 0 0)', description: '사이드바 텍스트' },
-    { name: 'Sidebar Primary', value: 'var(--sidebar-primary)', light: '#030213', dark: 'oklch(0.488 0.243 264.376)', description: '사이드바 주요 요소' },
-    { name: 'Sidebar Primary Foreground', value: 'var(--sidebar-primary-foreground)', light: 'oklch(0.985 0 0)', dark: 'oklch(0.985 0 0)', description: '사이드바 주요 요소 텍스트' },
-    { name: 'Sidebar Accent', value: 'var(--sidebar-accent)', light: 'oklch(0.97 0 0)', dark: 'oklch(0.269 0 0)', description: '사이드바 강조 요소' },
-    { name: 'Sidebar Accent Foreground', value: 'var(--sidebar-accent-foreground)', light: 'oklch(0.205 0 0)', dark: 'oklch(0.985 0 0)', description: '사이드바 강조 요소 텍스트' },
-    { name: 'Sidebar Border', value: 'var(--sidebar-border)', light: 'oklch(0.922 0 0)', dark: 'oklch(0.269 0 0)', description: '사이드바 경계선' },
-    { name: 'Sidebar Ring', value: 'var(--sidebar-ring)', light: 'oklch(0.708 0 0)', dark: 'oklch(0.439 0 0)', description: '사이드바 포커스 링' }
+    { name: 'Sidebar', value: 'var(--sidebar)', light: 'oklch(0.985 0 0)', dark: 'oklch(0.205 0 0)', description: 'Sidebar background' },
+    { name: 'Sidebar Foreground', value: 'var(--sidebar-foreground)', light: 'oklch(0.145 0 0)', dark: 'oklch(0.985 0 0)', description: 'Text in sidebar' },
+    { name: 'Sidebar Primary', value: 'var(--sidebar-primary)', light: '#030213', dark: 'oklch(0.488 0.243 264.376)', description: 'Main elements in sidebar' },
+    { name: 'Sidebar Primary Foreground', value: 'var(--sidebar-primary-foreground)', light: 'oklch(0.985 0 0)', dark: 'oklch(0.985 0 0)', description: 'Text in main sidebar elements' },
+    { name: 'Sidebar Accent', value: 'var(--sidebar-accent)', light: 'oklch(0.97 0 0)', dark: 'oklch(0.269 0 0)', description: 'Highlighted elements in sidebar' },
+    { name: 'Sidebar Accent Foreground', value: 'var(--sidebar-accent-foreground)', light: 'oklch(0.205 0 0)', dark: 'oklch(0.985 0 0)', description: 'Text in highlighted sidebar elements' },
+    { name: 'Sidebar Border', value: 'var(--sidebar-border)', light: 'oklch(0.922 0 0)', dark: 'oklch(0.269 0 0)', description: 'Sidebar border' },
+    { name: 'Sidebar Ring', value: 'var(--sidebar-ring)', light: 'oklch(0.708 0 0)', dark: 'oklch(0.439 0 0)', description: 'Focus ring in sidebar' }
   ];
 
   const chartColorTokens = [
-    { name: 'Chart 1', value: 'var(--chart-1)', light: 'oklch(0.646 0.222 41.116)', dark: 'oklch(0.488 0.243 264.376)', description: '차트 첫 번째 색상' },
-    { name: 'Chart 2', value: 'var(--chart-2)', light: 'oklch(0.6 0.118 184.704)', dark: 'oklch(0.696 0.17 162.48)', description: '차트 두 번째 색상' },
-    { name: 'Chart 3', value: 'var(--chart-3)', light: 'oklch(0.398 0.07 227.392)', dark: 'oklch(0.769 0.188 70.08)', description: '차트 세 번째 색상' },
-    { name: 'Chart 4', value: 'var(--chart-4)', light: 'oklch(0.828 0.189 84.429)', dark: 'oklch(0.627 0.265 303.9)', description: '차트 네 번째 색상' },
-    { name: 'Chart 5', value: 'var(--chart-5)', light: 'oklch(0.769 0.188 70.08)', dark: 'oklch(0.645 0.246 16.439)', description: '차트 다섯 번째 색상' }
+    { name: 'Chart 1', value: 'var(--chart-1)', light: 'oklch(0.646 0.222 41.116)', dark: 'oklch(0.488 0.243 264.376)', description: 'First chart color' },
+    { name: 'Chart 2', value: 'var(--chart-2)', light: 'oklch(0.6 0.118 184.704)', dark: 'oklch(0.696 0.17 162.48)', description: 'Second chart color' },
+    { name: 'Chart 3', value: 'var(--chart-3)', light: 'oklch(0.398 0.07 227.392)', dark: 'oklch(0.769 0.188 70.08)', description: 'Third chart color' },
+    { name: 'Chart 4', value: 'var(--chart-4)', light: 'oklch(0.828 0.189 84.429)', dark: 'oklch(0.627 0.265 303.9)', description: 'Fourth chart color' },
+    { name: 'Chart 5', value: 'var(--chart-5)', light: 'oklch(0.769 0.188 70.08)', dark: 'oklch(0.645 0.246 16.439)', description: 'Fifth chart color' }
   ];
 
   const typographyTokens = [
-    { name: 'Font Size', value: 'var(--font-size)', pixels: '14px', description: '기본 폰트 크기', element: 'html' },
-    { name: 'Font Weight Normal', value: 'var(--font-weight-normal)', weight: '400', description: '기본 폰트 가중치', usage: '본문 텍스트, 입력 필드' },
-    { name: 'Font Weight Medium', value: 'var(--font-weight-medium)', weight: '500', description: '중간 폰트 가중치', usage: '제목, 버튼, 라벨' }
+    { name: 'Font Size', value: 'var(--font-size)', pixels: '14px', description: 'Default font size', element: 'html' },
+    { name: 'Font Weight Normal', value: 'var(--font-weight-normal)', weight: '400', description: 'Default font weight', usage: 'Body text, input fields' },
+    { name: 'Font Weight Medium', value: 'var(--font-weight-medium)', weight: '500', description: 'Medium font weight', usage: 'Titles, buttons, labels' }
   ];
 
   const elementTypography = [
-    { element: 'h1', size: 'var(--text-2xl)', weight: 'var(--font-weight-medium)', lineHeight: '1.5', usage: '페이지 주요 제목' },
-    { element: 'h2', size: 'var(--text-xl)', weight: 'var(--font-weight-medium)', lineHeight: '1.5', usage: '섹션 제목' },
-    { element: 'h3', size: 'var(--text-lg)', weight: 'var(--font-weight-medium)', lineHeight: '1.5', usage: '부섹션 제목' },
-    { element: 'h4', size: 'var(--text-base)', weight: 'var(--font-weight-medium)', lineHeight: '1.5', usage: '소제목' },
-    { element: 'p', size: 'var(--text-base)', weight: 'var(--font-weight-normal)', lineHeight: '1.5', usage: '본문 텍스트' },
-    { element: 'label', size: 'var(--text-base)', weight: 'var(--font-weight-medium)', lineHeight: '1.5', usage: '폼 라벨' },
-    { element: 'button', size: 'var(--text-base)', weight: 'var(--font-weight-medium)', lineHeight: '1.5', usage: '버튼 텍스트' },
-    { element: 'input', size: 'var(--text-base)', weight: 'var(--font-weight-normal)', lineHeight: '1.5', usage: '입력 필드' }
+    { element: 'h1', size: 'var(--text-2xl)', weight: 'var(--font-weight-medium)', lineHeight: '1.5', usage: 'Main page title' },
+    { element: 'h2', size: 'var(--text-xl)', weight: 'var(--font-weight-medium)', lineHeight: '1.5', usage: 'Section title' },
+    { element: 'h3', size: 'var(--text-lg)', weight: 'var(--font-weight-medium)', lineHeight: '1.5', usage: 'Sub-section title' },
+    { element: 'h4', size: 'var(--text-base)', weight: 'var(--font-weight-medium)', lineHeight: '1.5', usage: 'Subtitle' },
+    { element: 'p', size: 'var(--text-base)', weight: 'var(--font-weight-normal)', lineHeight: '1.5', usage: 'Body text' },
+    { element: 'label', size: 'var(--text-base)', weight: 'var(--font-weight-medium)', lineHeight: '1.5', usage: 'Form label' },
+    { element: 'button', size: 'var(--text-base)', weight: 'var(--font-weight-medium)', lineHeight: '1.5', usage: 'Button text' },
+    { element: 'input', size: 'var(--text-base)', weight: 'var(--font-weight-normal)', lineHeight: '1.5', usage: 'Input field' }
   ];
 
   const radiusTokens = [
-    { name: 'Radius', value: 'var(--radius)', pixels: '0.625rem (10px)', description: '기본 둥근 모서리', usage: '카드, 버튼' },
-    { name: 'Radius Small', value: 'var(--radius-sm)', calculation: 'calc(var(--radius) - 4px)', pixels: '6px', description: '작은 둥근 모서리', usage: '작은 컴포넌트' },
-    { name: 'Radius Medium', value: 'var(--radius-md)', calculation: 'calc(var(--radius) - 2px)', pixels: '8px', description: '중간 둥근 모서리', usage: '일반 컴포넌트' },
-    { name: 'Radius Large', value: 'var(--radius-lg)', calculation: 'var(--radius)', pixels: '10px', description: '큰 둥근 모서리', usage: '카드, 모달' },
-    { name: 'Radius XL', value: 'var(--radius-xl)', calculation: 'calc(var(--radius) + 4px)', pixels: '14px', description: '매우 큰 둥근 모서리', usage: '큰 컨테이너' }
+    { name: 'Radius', value: 'var(--radius)', pixels: '0.625rem (10px)', description: 'Default border-radius', usage: 'Cards, buttons' },
+    { name: 'Radius Small', value: 'var(--radius-sm)', calculation: 'calc(var(--radius) - 4px)', pixels: '6px', description: 'Small border-radius', usage: 'Small components' },
+    { name: 'Radius Medium', value: 'var(--radius-md)', calculation: 'calc(var(--radius) - 2px)', pixels: '8px', description: 'Medium border-radius', usage: 'General components' },
+    { name: 'Radius Large', value: 'var(--radius-lg)', calculation: 'var(--radius)', pixels: '10px', description: 'Large border-radius', usage: 'Cards, modals' },
+    { name: 'Radius XL', value: 'var(--radius-xl)', calculation: 'calc(var(--radius) + 4px)', pixels: '14px', description: 'Very large border-radius', usage: 'Large containers' }
   ];
 
   const ColorSwatchGrid = ({ tokens, title }: { tokens: any[], title: string }) => (
@@ -142,84 +142,84 @@ export function TokensSection() {
             <Layers className="w-6 h-6 text-primary" />
           </div>
           <div>
-            <h1 className="text-3xl font-semibold">디자인 토큰</h1>
+            <h1 className="text-3xl font-semibold">Design Tokens</h1>
             <p className="text-muted-foreground">
-              일관된 디자인을 위한 시각적 속성의 명명된 엔티티입니다. Tailwind v4와 CSS 변수를 기반으로 합니다.
+              Named entities for visual properties to achieve consistent design, based on Tailwind v4 and CSS variables.
             </p>
           </div>
         </div>
         <div className="flex flex-wrap gap-2">
           <Badge variant="outline" className="flex items-center gap-1">
             <Palette className="w-3 h-3" />
-            시맨틱 색상
+            Semantic Colors
           </Badge>
           <Badge variant="outline" className="flex items-center gap-1">
             <Type className="w-3 h-3" />
-            타이포그래피
+            Typography
           </Badge>
           <Badge variant="outline" className="flex items-center gap-1">
             <Grid3X3 className="w-3 h-3" />
-            둥근 모서리
+            Border Radius
           </Badge>
           <Badge variant="outline" className="flex items-center gap-1">
             <BarChart3 className="w-3 h-3" />
-            차트 색상
+            Chart Colors
           </Badge>
           <Badge variant="outline" className="flex items-center gap-1">
             <Monitor className="w-3 h-3" />
-            사이드바
+            Sidebar
           </Badge>
-          <Badge variant="outline">CSS 변수</Badge>
-          <Badge variant="outline">라이트/다크 테마</Badge>
+          <Badge variant="outline">CSS Variables</Badge>
+          <Badge variant="outline">Light/Dark Theme</Badge>
         </div>
       </div>
 
       <Tabs defaultValue="semantic" className="space-y-6">
         <TabsList className="grid w-full grid-cols-5">
-          <TabsTrigger value="semantic">시맨틱 색상</TabsTrigger>
-          <TabsTrigger value="component">컴포넌트</TabsTrigger>
-          <TabsTrigger value="typography">타이포그래피</TabsTrigger>
-          <TabsTrigger value="spacing">간격</TabsTrigger>
-          <TabsTrigger value="usage">사용법</TabsTrigger>
+          <TabsTrigger value="semantic">Semantic Colors</TabsTrigger>
+          <TabsTrigger value="component">Component</TabsTrigger>
+          <TabsTrigger value="typography">Typography</TabsTrigger>
+          <TabsTrigger value="spacing">Spacing</TabsTrigger>
+          <TabsTrigger value="usage">Usage</TabsTrigger>
         </TabsList>
 
         {/* Semantic Colors Tab */}
         <TabsContent value="semantic" className="space-y-8">
           <ColorSwatchGrid 
             tokens={semanticColorTokens} 
-            title="시맨틱 색상 토큰" 
+            title="Semantic Color Tokens" 
           />
 
           <ColorSwatchGrid 
             tokens={chartColorTokens} 
-            title="차트 색상 토큰" 
+            title="Chart Color Tokens" 
           />
 
           <Card>
             <CardHeader>
-              <CardTitle>색상 사용 지침</CardTitle>
+              <CardTitle>Color Usage Guidelines</CardTitle>
               <CardDescription>
-                각 색상 토큰의 적절한 사용 목적과 맥락입니다.
+                The appropriate usage and context for each color token.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="grid gap-4 md:grid-cols-2">
                 <div className="space-y-3">
-                  <h5 className="font-medium">기본 색상</h5>
+                  <h5 className="font-medium">Basic Colors</h5>
                   <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• <strong>Primary:</strong> 주요 액션, 링크, 브랜드 요소</li>
-                    <li>• <strong>Secondary:</strong> 보조 액션, 필터, 태그</li>
-                    <li>• <strong>Accent:</strong> 호버 상태, 강조 영역</li>
-                    <li>• <strong>Muted:</strong> 비활성 상태, 보조 정보</li>
+                    <li>• <strong>Primary:</strong> Main actions, links, brand elements</li>
+                    <li>• <strong>Secondary:</strong> Secondary actions, filters, tags</li>
+                    <li>• <strong>Accent:</strong> Hover states, highlighted areas</li>
+                    <li>• <strong>Muted:</strong> Inactive states, secondary information</li>
                   </ul>
                 </div>
                 <div className="space-y-3">
-                  <h5 className="font-medium">상태 색상</h5>
+                  <h5 className="font-medium">Status Colors</h5>
                   <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• <strong>Destructive:</strong> 삭제, 오류, 경고</li>
-                    <li>• <strong>Chart Colors:</strong> 데이터 시각화 요소</li>
-                    <li>• <strong>Border:</strong> 구분선, 테두리</li>
-                    <li>• <strong>Ring:</strong> 포커스 표시, 접근성</li>
+                    <li>• <strong>Destructive:</strong> Deletion, errors, dangerous actions</li>
+                    <li>• <strong>Chart Colors:</strong> Data visualization elements</li>
+                    <li>• <strong>Border:</strong> Separators, borders</li>
+                    <li>• <strong>Ring:</strong> Focus indication, accessibility</li>
                   </ul>
                 </div>
               </div>
@@ -231,25 +231,25 @@ export function TokensSection() {
         <TabsContent value="component" className="space-y-8">
           <ColorSwatchGrid 
             tokens={componentColorTokens} 
-            title="컴포넌트 색상 토큰" 
+            title="Component Color Tokens" 
           />
 
           <ColorSwatchGrid 
             tokens={sidebarColorTokens} 
-            title="사이드바 색상 토큰" 
+            title="Sidebar Color Tokens" 
           />
 
           <Card>
             <CardHeader>
-              <CardTitle>테마 변환</CardTitle>
+              <CardTitle>Theme Conversion</CardTitle>
               <CardDescription>
-                모든 색상 토큰은 라이트 및 다크 테마에서 자동으로 적응됩니다.
+                All color tokens automatically adapt to light and dark themes.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="grid gap-4 md:grid-cols-2">
                 <div className="p-4 border rounded-lg bg-background">
-                  <h4 className="font-medium mb-3">라이트 테마</h4>
+                  <h4 className="font-medium mb-3">Light Theme</h4>
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
                       <div className="w-4 h-4 rounded" style={{ backgroundColor: '#ffffff' }} />
@@ -266,7 +266,7 @@ export function TokensSection() {
                   </div>
                 </div>
                 <div className="p-4 border rounded-lg bg-slate-900 text-white">
-                  <h4 className="font-medium mb-3">다크 테마</h4>
+                  <h4 className="font-medium mb-3">Dark Theme</h4>
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
                       <div className="w-4 h-4 rounded bg-slate-900 border border-slate-700" />
@@ -293,10 +293,10 @@ export function TokensSection() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Type className="w-5 h-5" />
-                타이포그래피 토큰
+                Typography Tokens
               </CardTitle>
               <CardDescription>
-                기본 폰트 크기와 가중치 시스템입니다. 14px 기준으로 설정되어 있습니다.
+                A font size and weight system based on 14px.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -334,9 +334,9 @@ export function TokensSection() {
 
           <Card>
             <CardHeader>
-              <CardTitle>HTML 요소 기본 스타일</CardTitle>
+              <CardTitle>HTML Element Default Styles</CardTitle>
               <CardDescription>
-                타이포그래피 시스템이 자동으로 적용되는 HTML 요소들입니다.
+                HTML elements that automatically apply the typography system.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -365,10 +365,10 @@ export function TokensSection() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Grid3X3 className="w-5 h-5" />
-                둥근 모서리 토큰
+                Border Radius Tokens
               </CardTitle>
               <CardDescription>
-                컴포넌트의 border-radius를 위한 토큰들입니다. 10px를 기준으로 계산됩니다.
+                Tokens for border-radius of components, calculated based on 10px.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -410,15 +410,15 @@ export function TokensSection() {
 
           <Card>
             <CardHeader>
-              <CardTitle>Tailwind 간격 시스템</CardTitle>
+              <CardTitle>Tailwind Spacing System</CardTitle>
               <CardDescription>
-                Tailwind CSS의 표준 간격 시스템을 사용합니다. 4px(1rem = 16px의 1/4) 기준 단위입니다.
+                Uses the standard Tailwind CSS spacing system. 4px (1rem = 1/4 of 16px) unit.
               </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="grid gap-4 md:grid-cols-3">
                 <div className="space-y-3">
-                  <h5 className="font-medium">작은 간격</h5>
+                  <h5 className="font-medium">Small Spacing</h5>
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between"><code>space-1</code> <span>4px</span></div>
                     <div className="flex justify-between"><code>space-2</code> <span>8px</span></div>
@@ -427,7 +427,7 @@ export function TokensSection() {
                   </div>
                 </div>
                 <div className="space-y-3">
-                  <h5 className="font-medium">중간 간격</h5>
+                  <h5 className="font-medium">Medium Spacing</h5>
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between"><code>space-6</code> <span>24px</span></div>
                     <div className="flex justify-between"><code>space-8</code> <span>32px</span></div>
@@ -436,7 +436,7 @@ export function TokensSection() {
                   </div>
                 </div>
                 <div className="space-y-3">
-                  <h5 className="font-medium">큰 간격</h5>
+                  <h5 className="font-medium">Large Spacing</h5>
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between"><code>space-16</code> <span>64px</span></div>
                     <div className="flex justify-between"><code>space-20</code> <span>80px</span></div>
@@ -455,15 +455,15 @@ export function TokensSection() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Code2 className="w-5 h-5" />
-                토큰 사용법
+                Token Usage
               </CardTitle>
               <CardDescription>
-                CSS 변수와 Tailwind CSS에서 디자인 토큰을 사용하는 방법입니다.
+                How to use design tokens in CSS variables and Tailwind CSS.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="space-y-4">
-                <h4 className="font-medium">CSS 변수로 직접 사용</h4>
+                <h4 className="font-medium">Direct Usage with CSS Variables</h4>
                 <div className="bg-muted/50 rounded-lg p-4">
                   <pre className="text-sm">
                     <code>{`.my-component {
@@ -479,7 +479,7 @@ export function TokensSection() {
               </div>
 
               <div className="space-y-4">
-                <h4 className="font-medium">Tailwind CSS 클래스</h4>
+                <h4 className="font-medium">Tailwind CSS Classes</h4>
                 <div className="bg-muted/50 rounded-lg p-4">
                   <pre className="text-sm">
                     <code>{`<div className="bg-background text-foreground border border-border rounded-lg">
@@ -498,7 +498,7 @@ export function TokensSection() {
               </div>
 
               <div className="space-y-4">
-                <h4 className="font-medium">Tailwind v4 테마 확장</h4>
+                <h4 className="font-medium">Tailwind v4 Theme Extension</h4>
                 <div className="bg-muted/50 rounded-lg p-4">
                   <pre className="text-sm">
                     <code>{`@theme inline {
@@ -515,15 +515,15 @@ export function TokensSection() {
 
           <Card>
             <CardHeader>
-              <CardTitle>CSS 변수 시스템</CardTitle>
+              <CardTitle>CSS Variable System</CardTitle>
               <CardDescription>
-                프로젝트에서 사용되는 CSS 변수 구조와 네이밍 규칙입니다.
+                The CSS variable structure and naming convention used in your project.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="grid gap-6 md:grid-cols-2">
                 <div className="space-y-4">
-                  <h5 className="font-medium">라이트 테마 (:root)</h5>
+                  <h5 className="font-medium">Light Theme (:root)</h5>
                   <div className="bg-muted/50 rounded-lg p-4">
                     <pre className="text-xs">
                       <code>{`:root {
@@ -542,7 +542,7 @@ export function TokensSection() {
                   </div>
                 </div>
                 <div className="space-y-4">
-                  <h5 className="font-medium">다크 테마 (.dark)</h5>
+                  <h5 className="font-medium">Dark Theme (.dark)</h5>
                   <div className="bg-muted/50 rounded-lg p-4">
                     <pre className="text-xs">
                       <code>{`.dark {
@@ -552,7 +552,7 @@ export function TokensSection() {
   --secondary: oklch(0.269 0 0);
   --muted: oklch(0.269 0 0);
   --border: oklch(0.269 0 0);
-  /* radius, typography 값은 동일 */
+  /* radius, typography values are the same */
 }`}</code>
                     </pre>
                   </div>
@@ -563,33 +563,33 @@ export function TokensSection() {
 
           <Card>
             <CardHeader>
-              <CardTitle>모범 사례</CardTitle>
+              <CardTitle>Best Practices</CardTitle>
               <CardDescription>
-                디자인 토큰을 효과적으로 사용하기 위한 지침입니다.
+                Guidelines for effectively using design tokens.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="grid gap-6 md:grid-cols-2">
                 <div className="space-y-4">
-                  <h5 className="font-medium text-green-700">권장사항</h5>
+                  <h5 className="font-medium text-green-700">Recommendations</h5>
                   <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• 시맨틱 토큰명 우선 사용 (primary vs #030213)</li>
-                    <li>• Foreground 쌍을 항상 함께 고려</li>
-                    <li>• 테마 전환 시 동작 확인</li>
-                    <li>• OKLCH 색상 공간 활용</li>
-                    <li>• 접근성 대비비 검증</li>
-                    <li>• 디자인 시스템 규칙 준수</li>
+                    <li>• Prioritize semantic token names (primary vs #030213)</li>
+                    <li>• Always consider Foreground pairs</li>
+                    <li>• Check behavior during theme switch</li>
+                    <li>• Utilize OKLCH color space</li>
+                    <li>• Accessibility verification</li>
+                    <li>• Adherence to design system rules</li>
                   </ul>
                 </div>
                 <div className="space-y-4">
-                  <h5 className="font-medium text-red-700">피해야 할 것</h5>
+                  <h5 className="font-medium text-red-700">Things to Avoid</h5>
                   <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• 하드코딩된 색상값 사용</li>
-                    <li>• 임의의 CSS 변수 생성</li>
-                    <li>• Foreground 없이 배경색만 사용</li>
-                    <li>• 토큰 네이밍 규칙 무시</li>
-                    <li>• 다크 테마 대응 누락</li>
-                    <li>• 차트 색상을 일반 UI에 사용</li>
+                    <li>• Hardcoding color values</li>
+                    <li>• Arbitrary CSS variable generation</li>
+                    <li>• Using only background colors without Foreground</li>
+                    <li>• Ignoring token naming conventions</li>
+                    <li>• Missing dark theme adaptation</li>
+                    <li>• Using chart colors for general UI</li>
                   </ul>
                 </div>
               </div>
