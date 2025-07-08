@@ -72,51 +72,51 @@ export function Navigation({ activeSection, onSectionChange }: NavigationProps) 
   const sections = [
     {
       id: 'get-started',
-      label: '시작하기',
+      label: 'Get Started',
       icon: Lightbulb,
       items: [
-        { id: 'overview', label: '개요', icon: Layout },
-        { id: 'tokens', label: '디자인 토큰', icon: Palette },
-        { id: 'typography', label: '타이포그래피', icon: Type },
+        { id: 'overview', label: 'Overview', icon: Layout },
+        { id: 'tokens', label: 'Design Tokens', icon: Palette },
+        { id: 'typography', label: 'Typography', icon: Type },
       ]
     },
     {
       id: 'guidelines',
-      label: '가이드라인',
+      label: 'Guidelines',
       icon: BookOpen,
       items: [
-        { id: 'accessibility', label: '접근성', icon: Accessibility },
-        { id: 'content', label: '콘텐츠', icon: FileText },
-        { id: 'color', label: '색상', icon: Palette },
-        { id: 'spacing', label: '간격', icon: Grid3X3 },
+        { id: 'accessibility', label: 'Accessibility', icon: Accessibility },
+        { id: 'content', label: 'Content', icon: FileText },
+        { id: 'color', label: 'Color', icon: Palette },
+        { id: 'spacing', label: 'Spacing', icon: Grid3X3 },
       ]
     },
     {
       id: 'components',
-      label: '컴포넌트',
+      label: 'Components',
       icon: Zap,
       items: [
-        { id: 'components-overview', label: '개요', icon: Layout },
+        { id: 'components-overview', label: 'Overview', icon: Layout },
         ...components.map(comp => ({ id: `component-${comp.id}`, label: comp.label, icon: Layers }))
       ]
     },
     {
       id: 'patterns',
-      label: '패턴',
+      label: 'Patterns',
       icon: Grid3X3,
       items: [
-        { id: 'patterns', label: '공통 패턴', icon: Grid3X3 },
-        { id: 'data-viz', label: '데이터 시각화', icon: BarChart3 },
+        { id: 'patterns', label: 'Common Patterns', icon: Grid3X3 },
+        { id: 'data-viz', label: 'Data Visualization', icon: BarChart3 },
       ]
     },
     {
       id: 'help',
-      label: '도움말',
+      label: 'Help',
       icon: HelpCircle,
       items: [
-        { id: 'help', label: '지원', icon: HelpCircle },
-        { id: 'developer', label: '개발자 리소스', icon: Code2 },
-        { id: 'ui-style-reflection', label: 'UI 스타일 반영', icon: Brush },
+        { id: 'help', label: 'Support', icon: HelpCircle },
+        { id: 'developer', label: 'Developer Resources', icon: Code2 },
+        { id: 'ui-style-reflection', label: 'UI Style Reflection', icon: Brush },
       ]
     }
   ];
@@ -124,8 +124,8 @@ export function Navigation({ activeSection, onSectionChange }: NavigationProps) 
   return (
     <nav className="w-64 bg-card border-r border-border h-full overflow-y-auto">
       <div className="p-6 border-b border-border">
-        <h1 className="text-xl text-primary">DJ 디자인 시스템</h1>
-        <p className="text-sm text-muted-foreground mt-1">컴포넌트 라이브러리</p>
+        <h1 className="text-xl text-primary">DJ Design System</h1>
+        <p className="text-sm text-muted-foreground mt-1">Component Library</p>
       </div>
       
       <div className="p-4">
