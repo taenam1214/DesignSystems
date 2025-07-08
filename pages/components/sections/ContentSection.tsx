@@ -24,177 +24,177 @@ export function ContentSection() {
   const writingPrinciples = [
     {
       icon: Users,
-      title: '사용자 중심',
-      description: '사용자의 목표와 필요를 최우선으로 고려하여 콘텐츠를 작성합니다.',
+      title: 'User-Centered',
+      description: 'Content is written with the user’s goals and needs as the top priority.',
       examples: [
-        '사용자가 원하는 정보를 빠르게 찾을 수 있도록 구성',
-        '기술적 용어보다는 일상적인 언어 사용',
-        '사용자의 상황과 맥락 고려'
+        'Organize information to help users find what they want quickly',
+        'Use everyday language instead of technical terms',
+        'Consider user context and situation'
       ]
     },
     {
       icon: Target,
-      title: '명확성',
-      description: '모호함 없이 명확하고 구체적인 정보를 전달합니다.',
+      title: 'Clarity',
+      description: 'Deliver clear and specific information without ambiguity.',
       examples: [
-        '간단하고 직접적인 문장 구조',
-        '구체적인 액션과 결과 명시',
-        '불필요한 수식어 제거'
+        'Simple and direct sentence structure',
+        'Specify concrete actions and results',
+        'Remove unnecessary adjectives'
       ]
     },
     {
       icon: Heart,
-      title: '공감과 배려',
-      description: '사용자의 감정과 상황에 공감하는 따뜻한 톤을 유지합니다.',
+      title: 'Empathy and Consideration',
+      description: 'Maintain a warm tone that empathizes with user emotions and situations.',
       examples: [
-        '오류 상황에서 비난보다는 해결책 제시',
-        '사용자의 노력과 시간을 인정',
-        '도움이 되는 조언과 격려'
+        'Instead of criticism, provide solutions in error situations',
+        'Acknowledge user effort and time',
+        'Provide helpful advice and encouragement'
       ]
     },
     {
       icon: Lightbulb,
-      title: '유용성',
-      description: '실제로 도움이 되는 가치 있는 정보만 포함합니다.',
+      title: 'Utility',
+      description: 'Only include valuable information that is actually helpful.',
       examples: [
-        '실행 가능한 단계별 가이드',
-        '구체적인 예시와 사례',
-        '예상되는 문제와 해결방법'
+        'Step-by-step guides that are executable',
+        'Concrete examples and cases',
+        'Expected problems and solutions'
       ]
     }
   ];
 
   const toneGuidelines = [
     {
-      title: '친근하고 전문적',
-      description: '접근하기 쉽지만 신뢰할 수 있는 톤',
+      title: 'Friendly and Professional',
+      description: 'A tone that is approachable but trustworthy.',
       dos: [
-        '"안녕하세요"보다는 "환영합니다" 사용',
-        '정중하고 예의바른 표현',
-        '전문성을 보여주는 정확한 정보'
+        'Instead of "Hello", use "Welcome"',
+        'Polite and courteous expressions',
+        'Accurate and specific information to show expertise'
       ],
       donts: [
-        '지나치게 캐주얼한 표현',
-        '불필요한 감탄사나 이모티콘',
-        '격식을 잃은 말투'
+        'Too casual expressions',
+        'Unnecessary exclamations or emojis',
+        'Stilted language'
       ]
     },
     {
-      title: '도움이 되는',
-      description: '사용자의 성공을 돕는 지원적인 톤',
+      title: 'Supportive',
+      description: 'A tone that helps users achieve success.',
       dos: [
-        '단계별 안내 제공',
-        '긍정적이고 격려하는 표현',
-        '대안과 옵션 제시'
+        'Provide step-by-step guidance',
+        'Express positivity and encouragement',
+        'Suggest alternatives and options'
       ],
       donts: [
-        '명령조나 지시적인 표현',
-        '비판적이거나 부정적인 언어',
-        '해결책 없는 문제 지적'
+        'Imperative language or directive expressions',
+        'Critical or negative language',
+        'Pointing out problems without solutions'
       ]
     },
     {
-      title: '간결하고 명확한',
-      description: '불필요한 말 없이 핵심만 전달하는 톤',
+      title: 'Concise and Clear',
+      description: 'A tone that conveys only the essential information without unnecessary words.',
       dos: [
-        '짧고 명확한 문장',
-        '핵심 정보 우선 배치',
-        '구체적이고 실행 가능한 표현'
+        'Short and clear sentences',
+        'Prioritize core information',
+        'Concrete and executable expressions'
       ],
       donts: [
-        '장황하고 복잡한 설명',
-        '모호하거나 추상적인 표현',
-        '중복되는 내용'
+        'Verbose and complex explanations',
+        'Vague or abstract expressions',
+        'Duplicate content'
       ]
     }
   ];
 
   const contentTypes = [
     {
-      type: '버튼 텍스트',
+      type: 'Button Text',
       guidelines: [
-        '동사로 시작하는 명확한 액션 표현',
-        '2-3단어로 간결하게 작성',
-        '사용자가 얻는 결과 명시'
+        'Clear and specific action expressions starting with verbs',
+        'Write concisely (2-3 words)',
+        'Specify the result the user will get'
       ],
       examples: {
-        good: ['저장하기', '다운로드', '계속하기', '변경사항 저장'],
-        bad: ['확인', '클릭', '제출', '완료']
+        good: ['Save', 'Download', 'Continue', 'Save changes'],
+        bad: ['OK', 'Click', 'Submit', 'Complete']
       }
     },
     {
-      type: '오류 메시지',
+      type: 'Error Message',
       guidelines: [
-        '문제가 무엇인지 명확히 설명',
-        '해결 방법이나 다음 단계 제시',
-        '사용자를 비난하지 않는 표현'
+        'Clearly explain what the problem is',
+        'Suggest a solution or next step',
+        'Do not criticize the user'
       ],
       examples: {
-        good: ['올바른 이메일 형식을 입력해주세요', '비밀번호는 8자 이상이어야 합니다'],
-        bad: ['잘못된 입력', '오류 발생', '실패']
+        good: ['Please enter a valid email format', 'Password must be at least 8 characters'],
+        bad: ['Incorrect input', 'Error occurred', 'Failed']
       }
     },
     {
-      type: '성공 메시지',
+      type: 'Success Message',
       guidelines: [
-        '사용자의 성취를 인정하고 축하',
-        '다음에 할 수 있는 액션 제안',
-        '긍정적이고 격려하는 톤'
+        'Acknowledge and congratulate the user’s achievement',
+        'Suggest an action they can do next',
+        'A positive and encouraging tone'
       ],
       examples: {
-        good: ['프로필이 성공적으로 업데이트되었습니다', '파일이 안전하게 저장되었습니다'],
-        bad: ['완료됨', '성공', '저장됨']
+        good: ['Profile updated successfully', 'File saved safely'],
+        bad: ['Completed', 'Success', 'Saved']
       }
     },
     {
-      type: '빈 상태',
+      type: 'Empty State',
       guidelines: [
-        '현재 상황을 명확히 설명',
-        '첫 번째 액션 제안',
-        '도움이 되는 팁이나 가이드 제공'
+        'Clearly describe the current situation',
+        'Suggest the first action',
+        'Provide helpful tips or guidelines'
       ],
       examples: {
-        good: ['아직 프로젝트가 없습니다. 첫 번째 프로젝트를 만들어보세요', '메시지함이 비어있습니다'],
-        bad: ['데이터 없음', '비어있음', '결과 없음']
+        good: ['No projects yet. Create your first project!', 'Your inbox is empty'],
+        bad: ['No data', 'Empty', 'No results']
       }
     }
   ];
 
   const inclusiveLanguage = [
     {
-      category: '성별 포용적 언어',
+      category: 'Gender-Inclusive Language',
       guidelines: [
-        '성별을 가정하지 않는 표현 사용',
-        '모든 성별이 포함될 수 있는 언어',
-        '직업이나 역할에 성별 고정관념 배제'
+        'Use expressions that do not assume gender',
+        'Language that includes all genders',
+        'Exclude gender stereotypes in job titles or roles'
       ],
       examples: {
-        inclusive: ['개발자', '사용자', '고객', '팀원'],
-        avoid: ['개발자/개발자 분', '사용자님', '고객님']
+        inclusive: ['Developer', 'User', 'Customer', 'Team member'],
+        avoid: ['Developer/Developer', 'User', 'Customer']
       }
     },
     {
-      category: '능력 포용적 언어',
+      category: 'Ability-Inclusive Language',
       guidelines: [
-        '장애나 능력에 대한 부정적 표현 피하기',
-        '사람 우선 언어 사용',
-        '접근성을 자연스럽게 고려'
+        'Avoid negative expressions related to disabilities or abilities',
+        'Use people-first language',
+        'Consider accessibility naturally'
       ],
       examples: {
-        inclusive: ['시각 장애가 있는 사용자', '키보드로 탐색하는 사용자'],
-        avoid: ['정상 사용자', '일반 사용자', '장애인']
+        inclusive: ['User with visual impairment', 'User who navigates with keyboard'],
+        avoid: ['Normal user', 'General user', 'Person with disability']
       }
     },
     {
-      category: '문화적 포용',
+      category: 'Cultural Inclusivity',
       guidelines: [
-        '다양한 문화적 배경 고려',
-        '지역이나 국가를 가정하지 않는 표현',
-        '보편적으로 이해 가능한 언어'
+        'Consider various cultural backgrounds',
+        'Expressions that do not assume a region or country',
+        'Language that is universally understandable'
       ],
       examples: {
-        inclusive: ['오늘', '현재', '지금'],
-        avoid: ['이번 주말', '휴일', '연말']
+        inclusive: ['Today', 'Now', 'Now'],
+        avoid: ['This weekend', 'Holiday', 'End of year']
       }
     }
   ];
@@ -208,36 +208,36 @@ export function ContentSection() {
             <FileText className="w-6 h-6 text-primary" />
           </div>
           <div>
-            <h1 className="text-3xl font-semibold">콘텐츠 가이드라인</h1>
+            <h1 className="text-3xl font-semibold">Content Guidelines</h1>
             <p className="text-muted-foreground">
-              일관되고 효과적인 사용자 경험을 위한 콘텐츠 작성 가이드라인입니다.
+              Guidelines for writing content to achieve consistent and effective user experiences.
             </p>
           </div>
         </div>
         <div className="flex flex-wrap gap-2">
           <Badge variant="outline" className="flex items-center gap-1">
             <MessageSquare className="w-3 h-3" />
-            톤 앤 보이스
+            Tone & Voice
           </Badge>
           <Badge variant="outline" className="flex items-center gap-1">
             <Globe className="w-3 h-3" />
-            포용적 언어
+            Inclusive Language
           </Badge>
           <Badge variant="outline" className="flex items-center gap-1">
             <Users className="w-3 h-3" />
-            사용자 중심
+            User-Centered
           </Badge>
-          <Badge variant="outline">접근성</Badge>
-          <Badge variant="outline">일관성</Badge>
+          <Badge variant="outline">Accessibility</Badge>
+          <Badge variant="outline">Consistency</Badge>
         </div>
       </div>
 
       <Tabs defaultValue="principles" className="space-y-6">
         <TabsList className="grid w-full grid-cols-4">
-          <TabsTrigger value="principles">원칙</TabsTrigger>
-          <TabsTrigger value="tone">톤 앤 보이스</TabsTrigger>
-          <TabsTrigger value="types">콘텐츠 유형</TabsTrigger>
-          <TabsTrigger value="inclusive">포용적 언어</TabsTrigger>
+          <TabsTrigger value="principles">Principles</TabsTrigger>
+          <TabsTrigger value="tone">Tone & Voice</TabsTrigger>
+          <TabsTrigger value="types">Content Types</TabsTrigger>
+          <TabsTrigger value="inclusive">Inclusive Language</TabsTrigger>
         </TabsList>
 
         {/* Principles Tab */}
@@ -246,10 +246,10 @@ export function ContentSection() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <BookOpen className="w-5 h-5" />
-                콘텐츠 작성 원칙
+                Content Writing Principles
               </CardTitle>
               <CardDescription>
-                모든 콘텐츠 작성 시 지켜야 하는 핵심 원칙들입니다.
+                Core principles to follow when writing all content.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -286,52 +286,52 @@ export function ContentSection() {
 
           <Card>
             <CardHeader>
-              <CardTitle>콘텐츠 체크리스트</CardTitle>
+              <CardTitle>Content Checklists</CardTitle>
               <CardDescription>
-                콘텐츠를 게시하기 전에 확인해야 할 체크리스트입니다.
+                Checklists to verify before publishing content.
               </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="grid gap-6 md:grid-cols-2">
                 <div className="space-y-4">
-                  <h5 className="font-medium">명확성 확인</h5>
+                  <h5 className="font-medium">Clarity Check</h5>
                   <div className="space-y-3">
                     <div className="flex items-center gap-3">
                       <input type="checkbox" id="clear-1" className="rounded" />
-                      <label htmlFor="clear-1" className="text-sm">목적이 명확한가?</label>
+                      <label htmlFor="clear-1" className="text-sm">Is the purpose clear?</label>
                     </div>
                     <div className="flex items-center gap-3">
                       <input type="checkbox" id="clear-2" className="rounded" />
-                      <label htmlFor="clear-2" className="text-sm">사용자가 해야 할 일이 분명한가?</label>
+                      <label htmlFor="clear-2" className="text-sm">Is it clear what the user needs to do?</label>
                     </div>
                     <div className="flex items-center gap-3">
                       <input type="checkbox" id="clear-3" className="rounded" />
-                      <label htmlFor="clear-3" className="text-sm">전문 용어 없이 이해할 수 있는가?</label>
+                      <label htmlFor="clear-3" className="text-sm">Can it be understood without technical terms?</label>
                     </div>
                     <div className="flex items-center gap-3">
                       <input type="checkbox" id="clear-4" className="rounded" />
-                      <label htmlFor="clear-4" className="text-sm">예상 결과가 명시되어 있는가?</label>
+                      <label htmlFor="clear-4" className="text-sm">Are expected results specified?</label>
                     </div>
                   </div>
                 </div>
                 <div className="space-y-4">
-                  <h5 className="font-medium">사용자 경험</h5>
+                  <h5 className="font-medium">User Experience</h5>
                   <div className="space-y-3">
                     <div className="flex items-center gap-3">
                       <input type="checkbox" id="ux-1" className="rounded" />
-                      <label htmlFor="ux-1" className="text-sm">사용자의 관점에서 작성되었는가?</label>
+                      <label htmlFor="ux-1" className="text-sm">Is it written from the user’s perspective?</label>
                     </div>
                     <div className="flex items-center gap-3">
                       <input type="checkbox" id="ux-2" className="rounded" />
-                      <label htmlFor="ux-2" className="text-sm">도움이 되고 유용한가?</label>
+                      <label htmlFor="ux-2" className="text-sm">Is it helpful and useful?</label>
                     </div>
                     <div className="flex items-center gap-3">
                       <input type="checkbox" id="ux-3" className="rounded" />
-                      <label htmlFor="ux-3" className="text-sm">톤이 일관적인가?</label>
+                      <label htmlFor="ux-3" className="text-sm">Is the tone consistent?</label>
                     </div>
                     <div className="flex items-center gap-3">
                       <input type="checkbox" id="ux-4" className="rounded" />
-                      <label htmlFor="ux-4" className="text-sm">포용적이고 접근 가능한가?</label>
+                      <label htmlFor="ux-4" className="text-sm">Is it inclusive and accessible?</label>
                     </div>
                   </div>
                 </div>
@@ -346,10 +346,10 @@ export function ContentSection() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Volume2 className="w-5 h-5" />
-                톤 앤 보이스 가이드라인
+                Tone & Voice Guidelines
               </CardTitle>
               <CardDescription>
-                브랜드 일관성을 위한 톤과 보이스 설정입니다.
+                Tone and voice settings for brand consistency.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -364,7 +364,7 @@ export function ContentSection() {
                       <div className="space-y-3">
                         <h5 className="font-medium text-green-700 flex items-center gap-2">
                           <CheckCircle className="w-4 h-4" />
-                          권장사항
+                          Recommendations
                         </h5>
                         <ul className="space-y-2 text-sm">
                           {tone.dos.map((item, idx) => (
@@ -378,7 +378,7 @@ export function ContentSection() {
                       <div className="space-y-3">
                         <h5 className="font-medium text-red-700 flex items-center gap-2">
                           <AlertTriangle className="w-4 h-4" />
-                          피해야 할 것
+                          Things to Avoid
                         </h5>
                         <ul className="space-y-2 text-sm">
                           {tone.donts.map((item, idx) => (
@@ -399,9 +399,9 @@ export function ContentSection() {
 
           <Card>
             <CardHeader>
-              <CardTitle>상황별 톤 적용</CardTitle>
+              <CardTitle>Tone Application by Situation</CardTitle>
               <CardDescription>
-                다양한 상황에서의 적절한 톤 사용법입니다.
+                How to use appropriate tones in various situations.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
@@ -409,17 +409,17 @@ export function ContentSection() {
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
                     <Smile className="w-5 h-5 text-green-600" />
-                    <h5 className="font-medium">성공 상황</h5>
+                    <h5 className="font-medium">Success Situation</h5>
                   </div>
                   <div className="space-y-2 text-sm">
                     <div className="p-3 bg-green-50 border border-green-200 rounded">
-                      <strong>좋은 예:</strong><br />
-                      "축하합니다! 계정이 성공적으로 생성되었습니다. 이제 모든 기능을 사용하실 수 있습니다."
+                      <strong>Good Example:</strong><br />
+                      "Congratulations! Your account has been successfully created. You can now use all features."
                     </div>
                     <div className="text-muted-foreground">
-                      • 성취감을 인정하고 축하<br />
-                      • 다음 단계 안내<br />
-                      • 긍정적이고 격려하는 톤
+                      • Acknowledge achievement and congratulate<br />
+                      • Guide to the next step<br />
+                      • A positive and encouraging tone
                     </div>
                   </div>
                 </div>
@@ -427,17 +427,17 @@ export function ContentSection() {
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
                     <AlertTriangle className="w-5 h-5 text-orange-600" />
-                    <h5 className="font-medium">오류 상황</h5>
+                    <h5 className="font-medium">Error Situation</h5>
                   </div>
                   <div className="space-y-2 text-sm">
                     <div className="p-3 bg-orange-50 border border-orange-200 rounded">
-                      <strong>좋은 예:</strong><br />
-                      "입력하신 이메일 형식을 확인해주세요. 올바른 형식: user@example.com"
+                      <strong>Good Example:</strong><br />
+                      "Please check your email format. Correct format: user@example.com"
                     </div>
                     <div className="text-muted-foreground">
-                      • 구체적인 문제 설명<br />
-                      • 해결 방법 제시<br />
-                      • 비난하지 않는 중립적 톤
+                      • Clearly explain the problem<br />
+                      • Suggest a solution<br />
+                      • A neutral tone without criticism
                     </div>
                   </div>
                 </div>
@@ -445,17 +445,17 @@ export function ContentSection() {
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
                     <Clock className="w-5 h-5 text-blue-600" />
-                    <h5 className="font-medium">대기 상황</h5>
+                    <h5 className="font-medium">Waiting Situation</h5>
                   </div>
                   <div className="space-y-2 text-sm">
                     <div className="p-3 bg-blue-50 border border-blue-200 rounded">
-                      <strong>좋은 예:</strong><br />
-                      "파일을 업로드하고 있습니다. 잠시만 기다려주세요. (약 30초 소요)"
+                      <strong>Good Example:</strong><br />
+                      "Uploading file. Please wait a moment. (Approximately 30 seconds)"
                     </div>
                     <div className="text-muted-foreground">
-                      • 현재 상황 명확히 설명<br />
-                      • 예상 시간 안내<br />
-                      • 안심시키는 톤
+                      • Clearly describe the current situation<br />
+                      • Guide expected time<br />
+                      • A reassuring tone
                     </div>
                   </div>
                 </div>
@@ -470,10 +470,10 @@ export function ContentSection() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Edit3 className="w-5 h-5" />
-                콘텐츠 유형별 가이드라인
+                Content Type Guidelines
               </CardTitle>
               <CardDescription>
-                UI의 다양한 요소별 콘텐츠 작성 가이드라인입니다.
+                Guidelines for writing content for various UI elements.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -483,7 +483,7 @@ export function ContentSection() {
                     <h3 className="font-semibold">{type.type}</h3>
                     <div className="space-y-3">
                       <div>
-                        <h5 className="font-medium mb-2">작성 지침</h5>
+                        <h5 className="font-medium mb-2">Guidelines</h5>
                         <ul className="space-y-1 text-sm">
                           {type.guidelines.map((guideline, idx) => (
                             <li key={idx} className="flex items-start gap-2">
@@ -495,7 +495,7 @@ export function ContentSection() {
                       </div>
                       <div className="grid gap-4 md:grid-cols-2">
                         <div className="space-y-2">
-                          <h5 className="font-medium text-green-700">좋은 예</h5>
+                          <h5 className="font-medium text-green-700">Good Examples</h5>
                           <div className="space-y-1">
                             {type.examples.good.map((example, idx) => (
                               <div key={idx} className="px-3 py-2 bg-green-50 border border-green-200 rounded text-sm">
@@ -505,7 +505,7 @@ export function ContentSection() {
                           </div>
                         </div>
                         <div className="space-y-2">
-                          <h5 className="font-medium text-red-700">피해야 할 예</h5>
+                          <h5 className="font-medium text-red-700">Things to Avoid</h5>
                           <div className="space-y-1">
                             {type.examples.bad.map((example, idx) => (
                               <div key={idx} className="px-3 py-2 bg-red-50 border border-red-200 rounded text-sm">
@@ -525,51 +525,51 @@ export function ContentSection() {
 
           <Card>
             <CardHeader>
-              <CardTitle>마이크로카피 가이드라인</CardTitle>
+              <CardTitle>Microcopy Guidelines</CardTitle>
               <CardDescription>
-                작은 텍스트 요소들이 사용자 경험에 미치는 큰 영향을 고려한 가이드라인입니다.
+                Guidelines considering the significant impact of small text elements on user experience.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="grid gap-6 md:grid-cols-2">
                 <div className="space-y-4">
-                  <h5 className="font-medium">폼 관련</h5>
+                  <h5 className="font-medium">Form-Related</h5>
                   <div className="space-y-3">
                     <div>
-                      <div className="font-medium text-sm">플레이스홀더</div>
-                      <div className="text-xs text-muted-foreground mb-2">예시 형식이나 도움말 제공</div>
+                      <div className="font-medium text-sm">Placeholder</div>
+                      <div className="text-xs text-muted-foreground mb-2">Provide examples or help text</div>
                       <div className="text-sm">
-                        <span className="text-green-600">좋음:</span> "name@company.com"<br />
-                        <span className="text-red-600">나쁨:</span> "이메일을 입력하세요"
+                        <span className="text-green-600">Good:</span> "name@company.com"<br />
+                        <span className="text-red-600">Bad:</span> "Enter your email"
                       </div>
                     </div>
                     <div>
-                      <div className="font-medium text-sm">도움말 텍스트</div>
-                      <div className="text-xs text-muted-foreground mb-2">추가 설명이나 제약사항</div>
+                      <div className="font-medium text-sm">Help Text</div>
+                      <div className="text-xs text-muted-foreground mb-2">Additional explanation or constraints</div>
                       <div className="text-sm">
-                        <span className="text-green-600">좋음:</span> "8자 이상, 숫자 포함"<br />
-                        <span className="text-red-600">나쁨:</span> "안전한 비밀번호를 사용하세요"
+                        <span className="text-green-600">Good:</span> "8 characters or more, including numbers"<br />
+                        <span className="text-red-600">Bad:</span> "Use a secure password"
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="space-y-4">
-                  <h5 className="font-medium">네비게이션</h5>
+                  <h5 className="font-medium">Navigation</h5>
                   <div className="space-y-3">
                     <div>
-                      <div className="font-medium text-sm">링크 텍스트</div>
-                      <div className="text-xs text-muted-foreground mb-2">목적지를 명확히 설명</div>
+                      <div className="font-medium text-sm">Link Text</div>
+                      <div className="text-xs text-muted-foreground mb-2">Clearly describe the destination</div>
                       <div className="text-sm">
-                        <span className="text-green-600">좋음:</span> "프로필 편집"<br />
-                        <span className="text-red-600">나쁨:</span> "여기를 클릭"
+                        <span className="text-green-600">Good:</span> "Edit Profile"<br />
+                        <span className="text-red-600">Bad:</span> "Click here"
                       </div>
                     </div>
                     <div>
-                      <div className="font-medium text-sm">브레드크럼</div>
-                      <div className="text-xs text-muted-foreground mb-2">현재 위치를 명확히 표시</div>
+                      <div className="font-medium text-sm">Breadcrumb</div>
+                      <div className="text-xs text-muted-foreground mb-2">Clearly show the current location</div>
                       <div className="text-sm">
-                        <span className="text-green-600">좋음:</span> "홈 &gt; 설정 &gt; 계정"<br />
-                        <span className="text-red-600">나쁨:</span> "페이지 1 &gt; 페이지 2"
+                        <span className="text-green-600">Good:</span> "Home &gt; Settings &gt; Account"<br />
+                        <span className="text-red-600">Bad:</span> "Page 1 &gt; Page 2"
                       </div>
                     </div>
                   </div>
@@ -585,10 +585,10 @@ export function ContentSection() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Globe className="w-5 h-5" />
-                포용적 언어 가이드라인
+                Inclusive Language Guidelines
               </CardTitle>
               <CardDescription>
-                모든 사용자가 환영받고 포함될 수 있는 언어 사용법입니다.
+                How to use language that welcomes and includes all users.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -598,7 +598,7 @@ export function ContentSection() {
                     <h3 className="font-semibold">{category.category}</h3>
                     <div className="space-y-3">
                       <div>
-                        <h5 className="font-medium mb-2">지침</h5>
+                        <h5 className="font-medium mb-2">Guidelines</h5>
                         <ul className="space-y-1 text-sm">
                           {category.guidelines.map((guideline, idx) => (
                             <li key={idx} className="flex items-start gap-2">
@@ -610,7 +610,7 @@ export function ContentSection() {
                       </div>
                       <div className="grid gap-4 md:grid-cols-2">
                         <div className="space-y-2">
-                          <h5 className="font-medium text-green-700">포용적 표현</h5>
+                          <h5 className="font-medium text-green-700">Inclusive Expressions</h5>
                           <div className="space-y-1">
                             {category.examples.inclusive.map((example, idx) => (
                               <div key={idx} className="px-3 py-2 bg-green-50 border border-green-200 rounded text-sm">
@@ -620,7 +620,7 @@ export function ContentSection() {
                           </div>
                         </div>
                         <div className="space-y-2">
-                          <h5 className="font-medium text-red-700">피해야 할 표현</h5>
+                          <h5 className="font-medium text-red-700">Things to Avoid</h5>
                           <div className="space-y-1">
                             {category.examples.avoid.map((example, idx) => (
                               <div key={idx} className="px-3 py-2 bg-red-50 border border-red-200 rounded text-sm">
@@ -640,45 +640,45 @@ export function ContentSection() {
 
           <Card>
             <CardHeader>
-              <CardTitle>접근성을 고려한 콘텐츠</CardTitle>
+              <CardTitle>Content Considered for Accessibility</CardTitle>
               <CardDescription>
-                스크린 리더와 보조 기술을 사용하는 사용자를 위한 콘텐츠 작성법입니다.
+                Guidelines for writing content for users who use screen readers or assistive technologies.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="grid gap-6 md:grid-cols-2">
                 <div className="space-y-4">
-                  <h5 className="font-medium">Alt 텍스트</h5>
+                  <h5 className="font-medium">Alt Text</h5>
                   <div className="space-y-2 text-sm">
                     <div>
-                      <strong>장식적 이미지:</strong> 빈 alt 속성 사용<br />
+                      <strong>Decorative Images:</strong> Use empty alt attribute<br />
                       <code className="bg-muted px-1 rounded">alt=""</code>
                     </div>
                     <div>
-                      <strong>정보 전달 이미지:</strong> 구체적이고 간결한 설명<br />
-                      <code className="bg-muted px-1 rounded">alt="매출 증가를 보여주는 막대 그래프"</code>
+                      <strong>Informational Images:</strong> Provide specific and concise descriptions<br />
+                      <code className="bg-muted px-1 rounded">alt="Bar graph showing sales increase"</code>
                     </div>
                     <div>
-                      <strong>복잡한 이미지:</strong> 요약과 상세 설명 분리<br />
-                      <code className="bg-muted px-1 rounded">alt="2023년 분기별 매출 현황" longdesc="..."</code>
+                      <strong>Complex Images:</strong> Separate summary and detailed description<br />
+                      <code className="bg-muted px-1 rounded">alt="Q4 2023 sales status" longdesc="..."</code>
                     </div>
                   </div>
                 </div>
                 <div className="space-y-4">
-                  <h5 className="font-medium">링크 텍스트</h5>
+                  <h5 className="font-medium">Link Text</h5>
                   <div className="space-y-2 text-sm">
                     <div className="p-3 bg-green-50 border border-green-200 rounded">
-                      <strong>좋은 예:</strong><br />
-                      "사용자 가이드 다운로드 (PDF, 2MB)"
+                      <strong>Good Example:</strong><br />
+                      "User Guide Download (PDF, 2MB)"
                     </div>
                     <div className="p-3 bg-red-50 border border-red-200 rounded">
-                      <strong>나쁜 예:</strong><br />
-                      "여기를 클릭하세요" 또는 "더 보기"
+                      <strong>Bad Example:</strong><br />
+                      "Click here" or "More"
                     </div>
                     <div className="text-muted-foreground">
-                      • 링크의 목적지나 기능을 명확히 설명<br />
-                      • 파일 형식과 크기 정보 포함<br />
-                      • 문맥 없이도 이해 가능한 텍스트
+                      • Clearly describe the destination or function of the link<br />
+                      • Include file format and size information<br />
+                      • Text that can be understood without context
                     </div>
                   </div>
                 </div>
