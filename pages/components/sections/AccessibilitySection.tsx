@@ -123,10 +123,10 @@ export function AccessibilitySection() {
 
       <Tabs defaultValue="principles" className="space-y-6">
         <TabsList className="grid w-full grid-cols-4">
-          <TabsTrigger value="principles">원칙</TabsTrigger>
-          <TabsTrigger value="guidelines">가이드라인</TabsTrigger>
-          <TabsTrigger value="testing">테스트</TabsTrigger>
-          <TabsTrigger value="resources">리소스</TabsTrigger>
+          <TabsTrigger value="principles">Principles</TabsTrigger>
+          <TabsTrigger value="guidelines">Guidelines</TabsTrigger>
+          <TabsTrigger value="testing">Testing</TabsTrigger>
+          <TabsTrigger value="resources">Resources</TabsTrigger>
         </TabsList>
 
         {/* Principles Tab */}
@@ -217,10 +217,10 @@ export function AccessibilitySection() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Contrast className="w-5 h-5" />
-                색상 대비
+                Color Contrast
               </CardTitle>
               <CardDescription>
-                텍스트와 배경 간의 충분한 대비는 가독성을 위해 필수입니다.
+                Sufficient contrast between text and background is essential for readability.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -235,8 +235,8 @@ export function AccessibilitySection() {
                           color: example.fg
                         }}
                       >
-                        <p className="font-medium">샘플 텍스트</p>
-                        <p className="text-sm opacity-80">이것은 대비 테스트입니다</p>
+                        <p className="font-medium">Sample Text</p>
+                        <p className="text-sm opacity-80">This is a contrast test</p>
                       </div>
                       <div className="space-y-1">
                         <div className="flex justify-between">
@@ -246,18 +246,18 @@ export function AccessibilitySection() {
                           </Badge>
                         </div>
                         <div className="text-xs text-muted-foreground">
-                          대비비: {example.ratio}
+                          Contrast Ratio: {example.ratio}
                         </div>
                       </div>
                     </div>
                   ))}
                 </div>
                 <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                  <h5 className="font-medium text-blue-900 mb-2">대비 요구사항</h5>
+                  <h5 className="font-medium text-blue-900 mb-2">Contrast Requirements</h5>
                   <ul className="text-sm text-blue-800 space-y-1">
-                    <li>• <strong>AA 수준:</strong> 일반 텍스트 4.5:1, 큰 텍스트 3:1</li>
-                    <li>• <strong>AAA 수준:</strong> 일반 텍스트 7:1, 큰 텍스트 4.5:1</li>
-                    <li>• <strong>비텍스트 요소:</strong> 3:1 (아이콘, 버튼 등)</li>
+                    <li>• <strong>AA Level:</strong> 4.5:1 for normal text, 3:1 for large text</li>
+                    <li>• <strong>AAA Level:</strong> 7:1 for normal text, 4.5:1 for large text</li>
+                    <li>• <strong>Non-text elements:</strong> 3:1 (icons, buttons, etc.)</li>
                   </ul>
                 </div>
               </div>
@@ -268,10 +268,10 @@ export function AccessibilitySection() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Keyboard className="w-5 h-5" />
-                키보드 탐색
+                Keyboard Navigation
               </CardTitle>
               <CardDescription>
-                모든 사용자가 키보드만으로 인터페이스를 탐색할 수 있어야 합니다.
+                All users must be able to navigate the interface using only the keyboard.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -287,12 +287,12 @@ export function AccessibilitySection() {
                   ))}
                 </div>
                 <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
-                  <h5 className="font-medium text-amber-900 mb-2">키보드 탐색 원칙</h5>
+                  <h5 className="font-medium text-amber-900 mb-2">Keyboard Navigation Principles</h5>
                   <ul className="text-sm text-amber-800 space-y-1">
-                    <li>• 논리적이고 예측 가능한 탭 순서</li>
-                    <li>• 현재 포커스 위치를 명확히 표시</li>
-                    <li>• 포커스 트랩을 모달 및 드롭다운에 구현</li>
-                    <li>• 스킵 링크로 주요 콘텐츠로 바로 이동</li>
+                    <li>• Logical and predictable tab order</li>
+                    <li>• Clear indication of current focus</li>
+                    <li>• Implement focus traps in modals and dropdowns</li>
+                    <li>• Use skip links to directly navigate to major content</li>
                   </ul>
                 </div>
               </div>
@@ -303,57 +303,57 @@ export function AccessibilitySection() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Volume2 className="w-5 h-5" />
-                스크린 리더 지원
+                Screen Reader Support
               </CardTitle>
               <CardDescription>
-                시각 장애가 있는 사용자를 위한 보조 기술 지원 가이드라인입니다.
+                Guidelines for supporting auxiliary technologies for users with visual impairments.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="grid gap-6 md:grid-cols-2">
                 <div className="space-y-4">
-                  <h5 className="font-medium">의미론적 HTML</h5>
+                  <h5 className="font-medium">Semantic HTML</h5>
                   <div className="bg-muted/50 rounded-lg p-4">
                     <pre className="text-sm">
                       <code>{`<button type="button">
-  클릭하세요
+  Click me
 </button>
 
-<nav aria-label="주 탐색">
+<nav aria-label="Main Navigation">
   <ul>
-    <li><a href="/">홈</a></li>
-    <li><a href="/about">소개</a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
   </ul>
 </nav>`}</code>
                     </pre>
                   </div>
                 </div>
                 <div className="space-y-4">
-                  <h5 className="font-medium">ARIA 라벨</h5>
+                  <h5 className="font-medium">ARIA Labels</h5>
                   <div className="bg-muted/50 rounded-lg p-4">
                     <pre className="text-sm">
                       <code>{`<button 
-  aria-label="검색"
+  aria-label="Search"
   aria-describedby="search-help"
 >
   <SearchIcon />
 </button>
 
 <div id="search-help">
-  키워드를 입력하여 검색하세요
+  Enter keywords to search
 </div>`}</code>
                     </pre>
                   </div>
                 </div>
               </div>
               <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-                <h5 className="font-medium text-green-900 mb-2">스크린 리더 모범 사례</h5>
+                <h5 className="font-medium text-green-900 mb-2">Best Practices for Screen Readers</h5>
                 <ul className="text-sm text-green-800 space-y-1">
-                  <li>• 모든 이미지에 적절한 alt 텍스트 제공</li>
-                  <li>• 폼 필드에 명확한 라벨 연결</li>
-                  <li>• 오류 메시지를 프로그래밍적으로 연결</li>
-                  <li>• 실시간 업데이트를 aria-live로 알림</li>
-                  <li>• 복잡한 UI에 ARIA 랜드마크 사용</li>
+                  <li>• Provide appropriate alt text for all images</li>
+                  <li>• Link form fields to clear labels</li>
+                  <li>• Link error messages programmatically</li>
+                  <li>• Notify real-time updates with aria-live</li>
+                  <li>• Use ARIA landmarks in complex UIs</li>
                 </ul>
               </div>
             </CardContent>
@@ -363,16 +363,16 @@ export function AccessibilitySection() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <MousePointer className="w-5 h-5" />
-                터치 및 모바일
+                Touch and Mobile
               </CardTitle>
               <CardDescription>
-                모바일 기기와 터치 인터페이스에서의 접근성 고려사항입니다.
+                Considerations for accessibility in mobile devices and touch interfaces.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="grid gap-6 md:grid-cols-2">
                 <div className="space-y-4">
-                  <h5 className="font-medium">터치 타겟 크기</h5>
+                  <h5 className="font-medium">Touch Target Size</h5>
                   <div className="space-y-3">
                     <div className="flex items-center gap-3">
                       <div className="w-11 h-11 bg-green-100 border-2 border-green-300 rounded flex items-center justify-center">
@@ -380,7 +380,7 @@ export function AccessibilitySection() {
                       </div>
                       <div>
                         <div className="text-sm font-medium">44px × 44px</div>
-                        <div className="text-xs text-muted-foreground">권장 최소 크기</div>
+                        <div className="text-xs text-muted-foreground">Recommended minimum size</div>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
@@ -389,29 +389,29 @@ export function AccessibilitySection() {
                       </div>
                       <div>
                         <div className="text-sm font-medium">32px × 32px</div>
-                        <div className="text-xs text-muted-foreground">너무 작음</div>
+                        <div className="text-xs text-muted-foreground">Too small</div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="space-y-4">
-                  <h5 className="font-medium">간격 및 레이아웃</h5>
+                  <h5 className="font-medium">Spacing and Layout</h5>
                   <ul className="text-sm space-y-2">
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-4 h-4 mt-0.5 text-green-600" />
-                      <span>터치 타겟 간 충분한 간격 (8px 이상)</span>
+                      <span>Sufficient spacing between touch targets (8px or more)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-4 h-4 mt-0.5 text-green-600" />
-                      <span>엄지로 쉽게 접근 가능한 위치</span>
+                      <span>Thumb easily accessible</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-4 h-4 mt-0.5 text-green-600" />
-                      <span>스크롤 없이 중요한 액션 접근</span>
+                      <span>Access important actions without scrolling</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-4 h-4 mt-0.5 text-green-600" />
-                      <span>가로 및 세로 방향 지원</span>
+                      <span>Support for horizontal and vertical orientation</span>
                     </li>
                   </ul>
                 </div>
@@ -424,52 +424,52 @@ export function AccessibilitySection() {
         <TabsContent value="testing" className="space-y-8">
           <Card>
             <CardHeader>
-              <CardTitle>접근성 테스트 체크리스트</CardTitle>
+              <CardTitle>Accessibility Testing Checklist</CardTitle>
               <CardDescription>
-                각 컴포넌트와 페이지에 대해 수행해야 하는 접근성 테스트 항목입니다.
+                Items that must be performed for each component and page for accessibility testing.
               </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="grid gap-6 md:grid-cols-2">
                 <div className="space-y-4">
-                  <h5 className="font-medium">자동화된 테스트</h5>
+                  <h5 className="font-medium">Automated Tests</h5>
                   <div className="space-y-3">
                     <div className="flex items-center gap-3">
                       <input type="checkbox" id="axe" className="rounded" />
-                      <label htmlFor="axe" className="text-sm">axe-core로 자동 검사</label>
+                      <label htmlFor="axe" className="text-sm">Automated testing with axe-core</label>
                     </div>
                     <div className="flex items-center gap-3">
                       <input type="checkbox" id="lighthouse" className="rounded" />
-                      <label htmlFor="lighthouse" className="text-sm">Lighthouse 접근성 감사</label>
+                      <label htmlFor="lighthouse" className="text-sm">Lighthouse accessibility audit</label>
                     </div>
                     <div className="flex items-center gap-3">
                       <input type="checkbox" id="wave" className="rounded" />
-                      <label htmlFor="wave" className="text-sm">WAVE 웹 접근성 평가</label>
+                      <label htmlFor="wave" className="text-sm">WAVE web accessibility evaluation</label>
                     </div>
                     <div className="flex items-center gap-3">
                       <input type="checkbox" id="color-oracle" className="rounded" />
-                      <label htmlFor="color-oracle" className="text-sm">Color Oracle 색맹 시뮬레이션</label>
+                      <label htmlFor="color-oracle" className="text-sm">Color Oracle color blindness simulation</label>
                     </div>
                   </div>
                 </div>
                 <div className="space-y-4">
-                  <h5 className="font-medium">수동 테스트</h5>
+                  <h5 className="font-medium">Manual Tests</h5>
                   <div className="space-y-3">
                     <div className="flex items-center gap-3">
                       <input type="checkbox" id="keyboard" className="rounded" />
-                      <label htmlFor="keyboard" className="text-sm">키보드 전용 탐색</label>
+                      <label htmlFor="keyboard" className="text-sm">Keyboard-only navigation</label>
                     </div>
                     <div className="flex items-center gap-3">
                       <input type="checkbox" id="screen-reader" className="rounded" />
-                      <label htmlFor="screen-reader" className="text-sm">스크린 리더 테스트</label>
+                      <label htmlFor="screen-reader" className="text-sm">Screen reader testing</label>
                     </div>
                     <div className="flex items-center gap-3">
                       <input type="checkbox" id="zoom" className="rounded" />
-                      <label htmlFor="zoom" className="text-sm">200% 확대 테스트</label>
+                      <label htmlFor="zoom" className="text-sm">200% zoom test</label>
                     </div>
                     <div className="flex items-center gap-3">
                       <input type="checkbox" id="focus" className="rounded" />
-                      <label htmlFor="focus" className="text-sm">포커스 표시 확인</label>
+                      <label htmlFor="focus" className="text-sm">Focus indicator check</label>
                     </div>
                   </div>
                 </div>
@@ -479,9 +479,9 @@ export function AccessibilitySection() {
 
           <Card>
             <CardHeader>
-              <CardTitle>테스트 도구 및 확장 프로그램</CardTitle>
+              <CardTitle>Testing Tools and Extensions</CardTitle>
               <CardDescription>
-                접근성 테스트에 유용한 도구와 브라우저 확장 프로그램입니다.
+                Useful tools and browser extensions for accessibility testing.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -489,31 +489,31 @@ export function AccessibilitySection() {
                 <Card className="p-4">
                   <h5 className="font-medium mb-2">axe DevTools</h5>
                   <p className="text-sm text-muted-foreground mb-3">
-                    Chrome/Firefox 확장 프로그램으로 실시간 접근성 검사
+                    Chrome/Firefox extension for real-time accessibility testing
                   </p>
                   <Button size="sm" variant="outline" className="w-full">
                     <ExternalLink className="w-3 h-3 mr-1" />
-                    설치하기
+                    Install
                   </Button>
                 </Card>
                 <Card className="p-4">
                   <h5 className="font-medium mb-2">WAVE</h5>
                   <p className="text-sm text-muted-foreground mb-3">
-                    웹 페이지의 접근성 문제를 시각적으로 표시
+                    Visually displays accessibility issues on web pages
                   </p>
                   <Button size="sm" variant="outline" className="w-full">
                     <ExternalLink className="w-3 h-3 mr-1" />
-                    사용하기
+                    Use
                   </Button>
                 </Card>
                 <Card className="p-4">
                   <h5 className="font-medium mb-2">Colour Contrast Analyser</h5>
                   <p className="text-sm text-muted-foreground mb-3">
-                    색상 대비비 측정 및 분석 도구
+                    Tool for measuring and analyzing contrast
                   </p>
                   <Button size="sm" variant="outline" className="w-full">
                     <ExternalLink className="w-3 h-3 mr-1" />
-                    다운로드
+                    Download
                   </Button>
                 </Card>
               </div>
@@ -522,9 +522,9 @@ export function AccessibilitySection() {
 
           <Card>
             <CardHeader>
-              <CardTitle>스크린 리더 테스트</CardTitle>
+              <CardTitle>Screen Reader Testing</CardTitle>
               <CardDescription>
-                주요 스크린 리더 소프트웨어에서 테스트하는 방법입니다.
+                How to test with major screen reader software.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -535,11 +535,11 @@ export function AccessibilitySection() {
                     <h5 className="font-medium">NVDA (Windows)</h5>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    무료 오픈소스 스크린 리더. Windows에서 가장 인기있는 선택.
+                    Free open-source screen reader. Most popular choice on Windows.
                   </p>
                   <div className="text-xs space-y-1">
-                    <div><kbd className="bg-muted px-1 rounded">Ctrl + Alt + N</kbd> 시작/중지</div>
-                    <div><kbd className="bg-muted px-1 rounded">Insert + Space</kbd> 브라우저 모드</div>
+                    <div><kbd className="bg-muted px-1 rounded">Ctrl + Alt + N</kbd> Start/Stop</div>
+                    <div><kbd className="bg-muted px-1 rounded">Insert + Space</kbd> Browser mode</div>
                   </div>
                 </div>
                 <div className="space-y-3">
@@ -548,11 +548,11 @@ export function AccessibilitySection() {
                     <h5 className="font-medium">VoiceOver (macOS/iOS)</h5>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Apple 기기에 내장된 스크린 리더. macOS와 iOS에서 기본 제공.
+                    Built-in screen reader on Apple devices. Provided by default on macOS and iOS.
                   </p>
                   <div className="text-xs space-y-1">
-                    <div><kbd className="bg-muted px-1 rounded">Cmd + F5</kbd> 시작/중지</div>
-                    <div><kbd className="bg-muted px-1 rounded">Ctrl + Option + Arrow</kbd> 탐색</div>
+                    <div><kbd className="bg-muted px-1 rounded">Cmd + F5</kbd> Start/Stop</div>
+                    <div><kbd className="bg-muted px-1 rounded">Ctrl + Option + Arrow</kbd> Navigation</div>
                   </div>
                 </div>
                 <div className="space-y-3">
@@ -561,11 +561,11 @@ export function AccessibilitySection() {
                     <h5 className="font-medium">TalkBack (Android)</h5>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Android 기기에 내장된 스크린 리더. Google에서 개발.
+                    Built-in screen reader on Android devices. Developed by Google.
                   </p>
                   <div className="text-xs space-y-1">
-                    <div>설정 &gt; 접근성 &gt; TalkBack</div>
-                    <div>스와이프로 탐색, 더블 탭으로 선택</div>
+                    <div>Settings &gt; Accessibility &gt; TalkBack</div>
+                    <div>Swipe for navigation, double tap to select</div>
                   </div>
                 </div>
               </div>
@@ -579,62 +579,62 @@ export function AccessibilitySection() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <BookOpen className="w-5 h-5" />
-                학습 리소스
+                Learning Resources
               </CardTitle>
               <CardDescription>
-                접근성에 대해 더 자세히 알아볼 수 있는 추천 리소스입니다.
+                Recommended resources for learning more about accessibility.
               </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="grid gap-4 md:grid-cols-2">
                 <div className="space-y-4">
-                  <h5 className="font-medium">공식 가이드라인</h5>
+                  <h5 className="font-medium">Official Guidelines</h5>
                   <div className="space-y-3">
                     <a href="#" className="flex items-center gap-3 p-3 border rounded-lg hover:bg-muted/50 transition-colors">
                       <ExternalLink className="w-4 h-4" />
                       <div>
-                        <div className="font-medium text-sm">WCAG 2.1 가이드라인</div>
-                        <div className="text-xs text-muted-foreground">W3C 웹 접근성 가이드라인</div>
+                        <div className="font-medium text-sm">WCAG 2.1 Guidelines</div>
+                        <div className="text-xs text-muted-foreground">W3C Web Accessibility Guidelines</div>
                       </div>
                     </a>
                     <a href="#" className="flex items-center gap-3 p-3 border rounded-lg hover:bg-muted/50 transition-colors">
                       <ExternalLink className="w-4 h-4" />
                       <div>
-                        <div className="font-medium text-sm">ARIA 작성 사례</div>
-                        <div className="text-xs text-muted-foreground">실용적인 ARIA 패턴과 예제</div>
+                        <div className="font-medium text-sm">ARIA Writing Examples</div>
+                        <div className="text-xs text-muted-foreground">Practical ARIA patterns and examples</div>
                       </div>
                     </a>
                     <a href="#" className="flex items-center gap-3 p-3 border rounded-lg hover:bg-muted/50 transition-colors">
                       <ExternalLink className="w-4 h-4" />
                       <div>
-                        <div className="font-medium text-sm">웹 접근성 연구소</div>
-                        <div className="text-xs text-muted-foreground">한국 웹 접근성 정보</div>
+                        <div className="font-medium text-sm">Web Accessibility Lab</div>
+                        <div className="text-xs text-muted-foreground">Korean Web Accessibility Information</div>
                       </div>
                     </a>
                   </div>
                 </div>
                 <div className="space-y-4">
-                  <h5 className="font-medium">실용 가이드</h5>
+                  <h5 className="font-medium">Practical Guidelines</h5>
                   <div className="space-y-3">
                     <a href="#" className="flex items-center gap-3 p-3 border rounded-lg hover:bg-muted/50 transition-colors">
                       <ExternalLink className="w-4 h-4" />
                       <div>
                         <div className="font-medium text-sm">A11y Project</div>
-                        <div className="text-xs text-muted-foreground">접근성 체크리스트와 리소스</div>
+                        <div className="text-xs text-muted-foreground">Checklists and resources for accessibility</div>
                       </div>
                     </a>
                     <a href="#" className="flex items-center gap-3 p-3 border rounded-lg hover:bg-muted/50 transition-colors">
                       <ExternalLink className="w-4 h-4" />
                       <div>
                         <div className="font-medium text-sm">Inclusive Design Patterns</div>
-                        <div className="text-xs text-muted-foreground">포용적 디자인 패턴과 사례</div>
+                        <div className="text-xs text-muted-foreground">Inclusive design patterns and examples</div>
                       </div>
                     </a>
                     <a href="#" className="flex items-center gap-3 p-3 border rounded-lg hover:bg-muted/50 transition-colors">
                       <ExternalLink className="w-4 h-4" />
                       <div>
-                        <div className="font-medium text-sm">MDN 접근성 가이드</div>
-                        <div className="text-xs text-muted-foreground">개발자를 위한 접근성 문서</div>
+                        <div className="font-medium text-sm">MDN Accessibility Guide</div>
+                        <div className="text-xs text-muted-foreground">Documentation for developers on accessibility</div>
                       </div>
                     </a>
                   </div>
@@ -645,39 +645,39 @@ export function AccessibilitySection() {
 
           <Card>
             <CardHeader>
-              <CardTitle>접근성 법규 및 표준</CardTitle>
+              <CardTitle>Regulations and Standards</CardTitle>
               <CardDescription>
-                준수해야 하는 접근성 관련 법규와 표준입니다.
+                Regulations and standards related to accessibility.
               </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-6">
                 <div className="grid gap-4 md:grid-cols-2">
                   <div className="p-4 border rounded-lg">
-                    <h5 className="font-medium mb-2">한국</h5>
+                    <h5 className="font-medium mb-2">Korea</h5>
                     <ul className="text-sm space-y-1">
-                      <li>• 장애인차별금지 및 권리구제 등에 관한 법률</li>
-                      <li>• 국가정보화기본법</li>
-                      <li>• 한국형 웹 콘텐츠 접근성 지침 (K-WCAG)</li>
-                      <li>• 웹 접근성 품질인증</li>
+                      <li>• Disability Discrimination Prevention and Remedies Act</li>
+                      <li>• National Information Infrastructure Act</li>
+                      <li>• Korean Web Content Accessibility Guidelines (K-WCAG)</li>
+                      <li>• Web Accessibility Quality Certification</li>
                     </ul>
                   </div>
                   <div className="p-4 border rounded-lg">
-                    <h5 className="font-medium mb-2">국제</h5>
+                    <h5 className="font-medium mb-2">International</h5>
                     <ul className="text-sm space-y-1">
                       <li>• WCAG 2.1 (Web Content Accessibility Guidelines)</li>
-                      <li>• Section 508 (미국)</li>
-                      <li>• EN 301 549 (유럽)</li>
-                      <li>• JIS X 8341 (일본)</li>
+                      <li>• Section 508 (USA)</li>
+                      <li>• EN 301 549 (Europe)</li>
+                      <li>• JIS X 8341 (Japan)</li>
                     </ul>
                   </div>
                 </div>
                 <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-                  <h5 className="font-medium text-yellow-900 mb-2">준수 수준</h5>
+                  <h5 className="font-medium text-yellow-900 mb-2">Compliance Level</h5>
                   <div className="text-sm text-yellow-800 space-y-1">
-                    <p><strong>Level A:</strong> 최소 접근성 수준</p>
-                    <p><strong>Level AA:</strong> 표준 준수 수준 (권장)</p>
-                    <p><strong>Level AAA:</strong> 최고 접근성 수준</p>
+                    <p><strong>Level A:</strong> Minimum accessibility level</p>
+                    <p><strong>Level AA:</strong> Standard compliance (recommended)</p>
+                    <p><strong>Level AAA:</strong> Highest accessibility level</p>
                   </div>
                 </div>
               </div>
@@ -686,38 +686,38 @@ export function AccessibilitySection() {
 
           <Card>
             <CardHeader>
-              <CardTitle>커뮤니티 및 지원</CardTitle>
+              <CardTitle>Community and Support</CardTitle>
               <CardDescription>
-                접근성 관련 질문이나 도움이 필요할 때 참고할 수 있는 커뮤니티입니다.
+                Community for questions or assistance related to accessibility.
               </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                 <Card className="p-4">
-                  <h5 className="font-medium mb-2">웹 접근성 연구소</h5>
+                  <h5 className="font-medium mb-2">Web Accessibility Lab</h5>
                   <p className="text-sm text-muted-foreground mb-3">
-                    한국의 웹 접근성 정보와 교육 자료
+                    Korean web accessibility information and educational materials
                   </p>
                   <Button size="sm" variant="outline" className="w-full">
-                    방문하기
+                    Visit
                   </Button>
                 </Card>
                 <Card className="p-4">
                   <h5 className="font-medium mb-2">A11y Slack</h5>
                   <p className="text-sm text-muted-foreground mb-3">
-                    접근성 전문가들의 글로벌 커뮤니티
+                    Global community of accessibility experts
                   </p>
                   <Button size="sm" variant="outline" className="w-full">
-                    참여하기
+                    Join
                   </Button>
                 </Card>
                 <Card className="p-4">
-                  <h5 className="font-medium mb-2">WebAIM 포럼</h5>
+                  <h5 className="font-medium mb-2">WebAIM Forum</h5>
                   <p className="text-sm text-muted-foreground mb-3">
-                    접근성 질문과 토론을 위한 포럼
+                    Forum for questions and discussions about accessibility
                   </p>
                   <Button size="sm" variant="outline" className="w-full">
-                    둘러보기
+                    Browse
                   </Button>
                 </Card>
               </div>
