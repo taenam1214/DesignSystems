@@ -42,84 +42,84 @@ import {
 
 export function OverviewSection() {
   const stats = [
-    { label: '총 컴포넌트', value: '46개', icon: Component, color: 'text-blue-600' },
-    { label: '가이드라인 섹션', value: '4개', icon: BookOpen, color: 'text-green-600' },
-    { label: '언어 지원', value: '한/영', icon: Globe, color: 'text-purple-600' },
-    { label: '접근성 레벨', value: 'WCAG 2.1', icon: Accessibility, color: 'text-orange-600' }
+    { label: 'Total Components', value: '46', icon: Component, color: 'text-blue-600' },
+    { label: 'Guideline Sections', value: '4', icon: BookOpen, color: 'text-green-600' },
+    { label: 'Language Support', value: 'KR/EN', icon: Globe, color: 'text-purple-600' },
+    { label: 'Accessibility Level', value: 'WCAG 2.1', icon: Accessibility, color: 'text-orange-600' }
   ];
 
   const features = [
     {
-      title: '포괄적인 컴포넌트 라이브러리',
-      description: '46개의 완전히 문서화된 UI 컴포넌트로 모든 사용 사례를 다룹니다.',
+      title: 'Comprehensive Component Library',
+      description: 'Covers all use cases with 46 fully documented UI components.',
       icon: Component,
-      highlights: ['Button, Card, Dialog 등 기본 컴포넌트', 'Calendar, Chart, Table 등 복합 컴포넌트', 'Form, Navigation 등 패턴 컴포넌트']
+      highlights: ['Base components like Button, Card, Dialog', 'Complex components like Calendar, Chart, Table', 'Pattern components like Form, Navigation']
     },
     {
-      title: '이중 언어 지원',
-      description: '한국어와 영어로 제공되는 완전한 문서화로 글로벌 팀에서 사용할 수 있습니다.',
+      title: 'Bilingual Support',
+      description: 'Fully documented in both Korean and English for global teams.',
       icon: Globe,
-      highlights: ['완전한 한국어 번역', '영어 원문 유지', '문화적 맥락 고려']
+      highlights: ['Complete Korean translation', 'Original English maintained', 'Cultural context considered']
     },
     {
       title: 'Tailwind v4 & OKLCH',
-      description: '최신 CSS 기술과 색상 과학을 활용한 현대적인 스타일링 시스템입니다.',
+      description: 'Modern styling system using the latest CSS technology and color science.',
       icon: Palette,
-      highlights: ['Tailwind CSS v4 베타', 'OKLCH 색상 공간', '일관된 시각적 표현']
+      highlights: ['Tailwind CSS v4 beta', 'OKLCH color space', 'Consistent visual expression']
     },
     {
-      title: '완전한 접근성',
-      description: 'WCAG 2.1 가이드라인을 준수하여 모든 사용자가 접근할 수 있는 컴포넌트입니다.',
+      title: 'Full Accessibility',
+      description: 'Components accessible to all users, compliant with WCAG 2.1 guidelines.',
       icon: Accessibility,
-      highlights: ['키보드 네비게이션', '스크린 리더 지원', 'ARIA 속성 완비']
+      highlights: ['Keyboard navigation', 'Screen reader support', 'Complete ARIA attributes']
     },
     {
-      title: 'shadcn/ui 기반',
-      description: '검증된 shadcn/ui 컴포넌트를 기반으로 한 안정적이고 확장 가능한 시스템입니다.',
+      title: 'Based on shadcn/ui',
+      description: 'Stable and extensible system based on proven shadcn/ui components.',
       icon: Layers,
-      highlights: ['Radix UI 프리미티브', 'TypeScript 완전 지원', '커스터마이징 가능']
+      highlights: ['Radix UI primitives', 'Full TypeScript support', 'Customizable']
     },
     {
-      title: '실무 중심 예제',
-      description: '각 컴포넌트마다 실제 사용 사례와 모범 사례를 제공합니다.',
+      title: 'Practical Examples',
+      description: 'Real-world use cases and best practices for each component.',
       icon: Target,
-      highlights: ['실전 사용 시나리오', '코드 예제 제공', 'UX 가이드라인']
+      highlights: ['Real usage scenarios', 'Code examples', 'UX guidelines']
     }
   ];
 
   const componentCategories = [
     {
-      category: '기본 컴포넌트',
+      category: 'Base Components',
       count: 8,
       examples: ['Button', 'Card', 'Badge', 'Avatar', 'Separator'],
       icon: Component
     },
     {
-      category: '폼 컴포넌트',
+      category: 'Form Components',
       count: 13,
       examples: ['Input', 'Select', 'Checkbox', 'Switch', 'Slider'],
       icon: FileText
     },
     {
-      category: '네비게이션',
+      category: 'Navigation',
       count: 6,
       examples: ['Sidebar', 'Breadcrumb', 'Pagination', 'MenuBar', 'Navigation Menu'],
       icon: Layout
     },
     {
-      category: '오버레이',
+      category: 'Overlay',
       count: 9,
       examples: ['Dialog', 'Sheet', 'Popover', 'Tooltip', 'Alert Dialog'],
       icon: Layers
     },
     {
-      category: '데이터 표시',
+      category: 'Data Display',
       count: 6,
       examples: ['Table', 'Chart', 'Progress', 'Skeleton', 'Accordion'],
       icon: BarChart3
     },
     {
-      category: '고급 컴포넌트',
+      category: 'Advanced Components',
       count: 4,
       examples: ['Command', 'Resizable', 'Carousel', 'Toaster'],
       icon: Settings
@@ -128,23 +128,23 @@ export function OverviewSection() {
 
   const designPrinciples = [
     {
-      title: '일관성',
-      description: '모든 컴포넌트에서 일관된 디자인 언어와 상호작용 패턴을 유지합니다.',
+      title: 'Consistency',
+      description: 'Maintain a consistent design language and interaction patterns across all components.',
       icon: CheckCircle
     },
     {
-      title: '접근성 우선',
-      description: '모든 사용자가 접근할 수 있도록 설계된 포용적인 디자인입니다.',
+      title: 'Accessibility First',
+      description: 'Inclusive design for all users.',
       icon: Accessibility
     },
     {
-      title: '개발자 경험',
-      description: '직관적인 API와 포괄적인 문서로 개발자의 생산성을 높입니다.',
+      title: 'Developer Experience',
+      description: 'Boost developer productivity with intuitive APIs and comprehensive documentation.',
       icon: Code
     },
     {
-      title: '확장성',
-      description: '프로젝트 요구사항에 맞게 쉽게 커스터마이징하고 확장할 수 있습니다.',
+      title: 'Scalability',
+      description: 'Easily customizable and extendable to fit project requirements.',
       icon: Zap
     }
   ];
@@ -152,21 +152,21 @@ export function OverviewSection() {
   const gettingStartedSteps = [
     {
       step: 1,
-      title: '컴포넌트 탐색',
-      description: '사이드바에서 원하는 컴포넌트를 선택하여 문서와 예제를 확인하세요.',
-      action: '컴포넌트 보기'
+      title: 'Explore Components',
+      description: 'Select the desired component from the sidebar to view documentation and examples.',
+      action: 'View Components'
     },
     {
       step: 2,
-      title: '가이드라인 학습',
-      description: '색상, 타이포그래피, 간격 등의 디자인 가이드라인을 학습하세요.',
-      action: '가이드라인 보기'
+      title: 'Learn Guidelines',
+      description: 'Study design guidelines such as color, typography, and spacing.',
+      action: 'View Guidelines'
     },
     {
       step: 3,
-      title: '코드 복사 & 사용',
-      description: '예제 코드를 복사하여 프로젝트에 바로 적용할 수 있습니다.',
-      action: '시작하기'
+      title: 'Copy & Use Code',
+      description: 'Copy example code and apply it directly to your project.',
+      action: 'Get Started'
     }
   ];
 
@@ -177,25 +177,24 @@ export function OverviewSection() {
         <div className="space-y-4">
           <Badge variant="outline" className="mb-4">
             <Sparkles className="w-3 h-3 mr-1" />
-            v1.0.0 - 완전한 한국어 지원
+            v1.0.0 - Full Korean Support
           </Badge>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-            DJ 디자인 시스템
+            DJ Design System
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            현대적이고 접근 가능한 UI 컴포넌트 라이브러리입니다. 
-            Tailwind v4와 OKLCH 색상 공간을 활용하여 일관되고 아름다운 사용자 경험을 제공합니다.
+            A modern, accessible UI component library. Provides a consistent and beautiful user experience using Tailwind v4 and the OKLCH color space.
           </p>
         </div>
         
         <div className="flex flex-wrap justify-center gap-4">
           <Button size="lg" className="gap-2">
             <Component className="w-4 h-4" />
-            컴포넌트 둘러보기
+            Browse Components
           </Button>
           <Button variant="outline" size="lg" className="gap-2">
             <BookOpen className="w-4 h-4" />
-            가이드라인 읽기
+            Read Guidelines
           </Button>
         </div>
       </div>
@@ -216,9 +215,9 @@ export function OverviewSection() {
       {/* Key Features */}
       <section className="space-y-6">
         <div className="text-center space-y-2">
-          <h2 className="text-3xl font-bold">주요 특징</h2>
+          <h2 className="text-3xl font-bold">Key Features</h2>
           <p className="text-muted-foreground">
-            현대적인 웹 개발을 위한 모든 것을 갖춘 포괄적인 디자인 시스템
+            A comprehensive design system for modern web development.
           </p>
         </div>
         
@@ -248,9 +247,9 @@ export function OverviewSection() {
       {/* Component Categories */}
       <section className="space-y-6">
         <div className="text-center space-y-2">
-          <h2 className="text-3xl font-bold">컴포넌트 카테고리</h2>
+          <h2 className="text-3xl font-bold">Component Categories</h2>
           <p className="text-muted-foreground">
-            체계적으로 분류된 46개의 UI 컴포넌트
+            Organized into 46 UI components.
           </p>
         </div>
         
@@ -260,7 +259,7 @@ export function OverviewSection() {
               <CardHeader className="pb-3">
                 <div className="flex items-center justify-between">
                   <category.icon className="w-6 h-6 text-primary" />
-                  <Badge variant="secondary">{category.count}개</Badge>
+                  <Badge variant="secondary">{category.count} items</Badge>
                 </div>
                 <CardTitle className="text-lg">{category.category}</CardTitle>
               </CardHeader>
@@ -281,9 +280,9 @@ export function OverviewSection() {
       {/* Design Principles */}
       <section className="space-y-6">
         <div className="text-center space-y-2">
-          <h2 className="text-3xl font-bold">디자인 원칙</h2>
+          <h2 className="text-3xl font-bold">Design Principles</h2>
           <p className="text-muted-foreground">
-            모든 컴포넌트 설계의 기반이 되는 핵심 원칙들
+            Core principles that form the foundation of all component designs.
           </p>
         </div>
         
@@ -303,9 +302,9 @@ export function OverviewSection() {
       {/* Technology Stack */}
       <section className="space-y-6">
         <div className="text-center space-y-2">
-          <h2 className="text-3xl font-bold">기술 스택</h2>
+          <h2 className="text-3xl font-bold">Technology Stack</h2>
           <p className="text-muted-foreground">
-            최신 기술을 활용한 현대적인 개발 환경
+            Modern development environment leveraging the latest technologies.
           </p>
         </div>
         
@@ -314,28 +313,28 @@ export function OverviewSection() {
             <CardContent className="pt-6 text-center">
               <Code className="w-8 h-8 mx-auto mb-3 text-blue-600" />
               <h4 className="font-semibold mb-1">React 18</h4>
-              <p className="text-sm text-muted-foreground">최신 React 기능 활용</p>
+              <p className="text-sm text-muted-foreground">Utilizes modern React features.</p>
             </CardContent>
           </Card>
           <Card>
             <CardContent className="pt-6 text-center">
               <Brush className="w-8 h-8 mx-auto mb-3 text-cyan-600" />
               <h4 className="font-semibold mb-1">Tailwind v4</h4>
-              <p className="text-sm text-muted-foreground">차세대 유틸리티 CSS</p>
+              <p className="text-sm text-muted-foreground">Next-generation utility CSS.</p>
             </CardContent>
           </Card>
           <Card>
             <CardContent className="pt-6 text-center">
               <Palette className="w-8 h-8 mx-auto mb-3 text-purple-600" />
-              <h4 className="font-semibold mb-1">OKLCH 색상</h4>
-              <p className="text-sm text-muted-foreground">지각적 균일성</p>
+              <h4 className="font-semibold mb-1">OKLCH Color Space</h4>
+              <p className="text-sm text-muted-foreground">Perceptual uniformity.</p>
             </CardContent>
           </Card>
           <Card>
             <CardContent className="pt-6 text-center">
               <Package className="w-8 h-8 mx-auto mb-3 text-green-600" />
               <h4 className="font-semibold mb-1">shadcn/ui</h4>
-              <p className="text-sm text-muted-foreground">검증된 컴포넌트</p>
+              <p className="text-sm text-muted-foreground">Verified components.</p>
             </CardContent>
           </Card>
         </div>
@@ -344,9 +343,9 @@ export function OverviewSection() {
       {/* Getting Started */}
       <section className="space-y-6">
         <div className="text-center space-y-2">
-          <h2 className="text-3xl font-bold">시작하기</h2>
+          <h2 className="text-3xl font-bold">Getting Started</h2>
           <p className="text-muted-foreground">
-            세 단계로 디자인 시스템을 활용해보세요
+            Experience the design system in three simple steps.
           </p>
         </div>
         
@@ -378,33 +377,33 @@ export function OverviewSection() {
         <div className="text-center space-y-2">
           <h2 className="text-2xl font-bold flex items-center justify-center gap-2">
             <Accessibility className="w-6 h-6" />
-            접근성 우선 설계
+            Accessibility First Design
           </h2>
           <p className="text-muted-foreground">
-            모든 사용자를 위한 포용적인 디자인
+            Inclusive design for all users.
           </p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
           <div className="text-center space-y-2">
             <Keyboard className="w-8 h-8 mx-auto text-blue-600" />
-            <h4 className="font-semibold">키보드 네비게이션</h4>
-            <p className="text-sm text-muted-foreground">완전한 키보드 지원</p>
+            <h4 className="font-semibold">Keyboard Navigation</h4>
+            <p className="text-sm text-muted-foreground">Complete keyboard support.</p>
           </div>
           <div className="text-center space-y-2">
             <Volume2 className="w-8 h-8 mx-auto text-green-600" />
-            <h4 className="font-semibold">스크린 리더</h4>
-            <p className="text-sm text-muted-foreground">ARIA 속성 완비</p>
+            <h4 className="font-semibold">Screen Reader</h4>
+            <p className="text-sm text-muted-foreground">Complete ARIA attributes.</p>
           </div>
           <div className="text-center space-y-2">
             <Eye className="w-8 h-8 mx-auto text-purple-600" />
-            <h4 className="font-semibold">시각적 접근성</h4>
-            <p className="text-sm text-muted-foreground">고대비 및 색각 지원</p>
+            <h4 className="font-semibold">Visual Accessibility</h4>
+            <p className="text-sm text-muted-foreground">High contrast and color blindness support.</p>
           </div>
           <div className="text-center space-y-2">
             <MousePointer className="w-8 h-8 mx-auto text-orange-600" />
-            <h4 className="font-semibold">모터 접근성</h4>
-            <p className="text-sm text-muted-foreground">충분한 클릭 영역</p>
+            <h4 className="font-semibold">Motor Accessibility</h4>
+            <p className="text-sm text-muted-foreground">Sufficient clickable areas.</p>
           </div>
         </div>
       </section>
@@ -415,14 +414,14 @@ export function OverviewSection() {
           <Card className="hover:shadow-md transition-shadow">
             <CardHeader className="pb-3">
               <Component className="w-6 h-6 text-primary" />
-              <CardTitle className="text-lg">컴포넌트</CardTitle>
+              <CardTitle className="text-lg">Components</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground mb-3">
-                46개의 완전히 문서화된 UI 컴포넌트를 탐색하세요.
+                Explore 46 fully documented UI components.
               </p>
               <Button variant="ghost" size="sm" className="p-0 h-auto">
-                컴포넌트 보기 →
+                View Components →
               </Button>
             </CardContent>
           </Card>
@@ -430,14 +429,14 @@ export function OverviewSection() {
           <Card className="hover:shadow-md transition-shadow">
             <CardHeader className="pb-3">
               <BookOpen className="w-6 h-6 text-primary" />
-              <CardTitle className="text-lg">가이드라인</CardTitle>
+              <CardTitle className="text-lg">Guidelines</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground mb-3">
-                색상, 타이포그래피, 간격 등의 디자인 가이드라인을 확인하세요.
+                Check design guidelines such as color, typography, and spacing.
               </p>
               <Button variant="ghost" size="sm" className="p-0 h-auto">
-                가이드라인 보기 →
+                View Guidelines →
               </Button>
             </CardContent>
           </Card>
@@ -445,14 +444,14 @@ export function OverviewSection() {
           <Card className="hover:shadow-md transition-shadow">
             <CardHeader className="pb-3">
               <Accessibility className="w-6 h-6 text-primary" />
-              <CardTitle className="text-lg">접근성</CardTitle>
+              <CardTitle className="text-lg">Accessibility</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground mb-3">
-                WCAG 2.1 가이드라인을 준수한 접근성 정보를 학습하세요.
+                Learn about accessibility information compliant with WCAG 2.1 guidelines.
               </p>
               <Button variant="ghost" size="sm" className="p-0 h-auto">
-                접근성 보기 →
+                View Accessibility →
               </Button>
             </CardContent>
           </Card>
@@ -460,14 +459,14 @@ export function OverviewSection() {
           <Card className="hover:shadow-md transition-shadow">
             <CardHeader className="pb-3">
               <HelpCircle className="w-6 h-6 text-primary" />
-              <CardTitle className="text-lg">도움말</CardTitle>
+              <CardTitle className="text-lg">Help</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground mb-3">
-                자주 묻는 질문과 문제 해결 방법을 찾아보세요.
+                Find frequently asked questions and solutions.
               </p>
               <Button variant="ghost" size="sm" className="p-0 h-auto">
-                도움말 보기 →
+                View Help →
               </Button>
             </CardContent>
           </Card>
