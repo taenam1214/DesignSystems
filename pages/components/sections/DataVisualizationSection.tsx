@@ -45,19 +45,19 @@ import {
 export function DataVisualizationSection() {
   // Sample data for charts
   const monthlyData = [
-    { month: '1월', sales: 4000, users: 2400, revenue: 2400 },
-    { month: '2월', sales: 3000, users: 1398, revenue: 2210 },
-    { month: '3월', sales: 2000, users: 9800, revenue: 2290 },
-    { month: '4월', sales: 2780, users: 3908, revenue: 2000 },
-    { month: '5월', sales: 1890, users: 4800, revenue: 2181 },
-    { month: '6월', sales: 2390, users: 3800, revenue: 2500 },
+    { month: 'Jan', sales: 4000, users: 2400, revenue: 2400 },
+    { month: 'Feb', sales: 3000, users: 1398, revenue: 2210 },
+    { month: 'Mar', sales: 2000, users: 9800, revenue: 2290 },
+    { month: 'Apr', sales: 2780, users: 3908, revenue: 2000 },
+    { month: 'May', sales: 1890, users: 4800, revenue: 2181 },
+    { month: 'Jun', sales: 2390, users: 3800, revenue: 2500 },
   ];
 
   const categoryData = [
-    { name: '모바일', value: 400, color: 'var(--chart-1)' },
-    { name: '데스크톱', value: 300, color: 'var(--chart-2)' },
-    { name: '태블릿', value: 200, color: 'var(--chart-3)' },
-    { name: '기타', value: 100, color: 'var(--chart-4)' },
+    { name: 'Mobile', value: 400, color: 'var(--chart-1)' },
+    { name: 'Desktop', value: 300, color: 'var(--chart-2)' },
+    { name: 'Tablet', value: 200, color: 'var(--chart-3)' },
+    { name: 'Other', value: 100, color: 'var(--chart-4)' },
   ];
 
   const performanceData = [
@@ -81,7 +81,7 @@ export function DataVisualizationSection() {
   const chartTypes = [
     {
       id: 'bar',
-      title: '막대 차트',
+      title: 'Bar Chart',
       icon: BarChart3,
       description: 'Compare data across categories',
       usage: 'Compare sales, user numbers, scores, etc.',
@@ -91,7 +91,7 @@ export function DataVisualizationSection() {
     },
     {
       id: 'line',
-      title: '선 차트',
+      title: 'Line Chart',
       icon: LineChart,
       description: 'Display trends over time',
       usage: 'Stock fluctuations, website traffic, temperature changes',
@@ -101,7 +101,7 @@ export function DataVisualizationSection() {
     },
     {
       id: 'pie',
-      title: '원형 차트 (파이/도넛)',
+      title: 'Pie Chart (Donut)',
       icon: PieChart,
       description: 'Display the proportion and composition of each part in relation to the whole',
       usage: 'Market share, budget allocation, survey results, category distribution',
@@ -111,7 +111,7 @@ export function DataVisualizationSection() {
     },
     {
       id: 'area',
-      title: '영역 차트',
+      title: 'Area Chart',
       icon: Activity,
       description: 'Display cumulative data or volume',
       usage: 'Cumulative sales, stacked charts, filled areas',
@@ -350,7 +350,7 @@ export function DataVisualizationSection() {
                           ))}
                         </Pie>
                         <text x="50%" y="50%" textAnchor="middle" dominantBaseline="middle" className="fill-foreground text-lg font-medium">
-                          총 1,000
+                          Total 1,000
                         </text>
                       </RechartsPieChart>
                     </ResponsiveContainer>
