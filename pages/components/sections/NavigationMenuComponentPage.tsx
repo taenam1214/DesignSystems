@@ -48,7 +48,6 @@ import {
   Music,
   Archive,
   BookOpen,
-  Tool,
   HelpCircle,
   Zap,
   Heart,
