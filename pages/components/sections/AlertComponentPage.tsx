@@ -109,7 +109,6 @@ import {
   Hexagon,
   Octagon,
   Move,
-  Resize,
   Crop,
   Filter,
   Layers,
