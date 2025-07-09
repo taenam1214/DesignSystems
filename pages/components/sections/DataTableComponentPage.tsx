@@ -525,7 +525,6 @@ export function DataTableComponentPage() {
                     <TableHead className="w-[50px]">
                       <Checkbox
                         checked={isAllSelected}
-                        indeterminate={isIndeterminate ? true : undefined}
                         onCheckedChange={handleSelectAll}
                       />
                     </TableHead>
