@@ -132,8 +132,7 @@ import {
   Plane,
   Train,
   Bus,
-  Bike,
-  Walk
+  Bike
 } from 'lucide-react';
 
 export function AlertComponentPage() {
