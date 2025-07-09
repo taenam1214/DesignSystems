@@ -508,7 +508,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from ".
                     <Checkbox 
                       id="terms" 
                       checked={agreesToTerms}
-                      onCheckedChange={setAgreesToTerms}
+                      onCheckedChange={checked => setAgreesToTerms(checked === true)}
                     />
                     <Label htmlFor="terms">이용약관에 동의합니다 *</Label>
                   </div>
