@@ -51,7 +51,6 @@ import {
   MousePointer,
   Keyboard,
   Printer,
-  Scanner,
   Webcam,
   Mic,
   Star,
@@ -64,7 +63,6 @@ import {
   Upload,
   Play,
   Pause,
-  Skip,
   Volume2,
   Wallet,
   X
