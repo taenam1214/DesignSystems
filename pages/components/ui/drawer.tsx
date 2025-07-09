@@ -17,7 +17,7 @@ const DrawerTrigger = React.forwardRef<
   React.ElementRef<typeof DrawerPrimitive.Trigger>,
   React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Trigger>
 >(({ ...props }, ref) => {
-  return <DrawerPrimitive.Trigger ref={ref} data-slot="drawer-trigger" {...props} />;
+  return <DrawerPrimitive.Trigger data-slot="drawer-trigger" {...props} />;
 });
 DrawerTrigger.displayName = "DrawerTrigger";
 
@@ -25,7 +25,7 @@ const DrawerPortal = React.forwardRef<
   React.ElementRef<typeof DrawerPrimitive.Portal>,
   React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Portal>
 >(({ ...props }, ref) => {
-  return <DrawerPrimitive.Portal ref={ref} data-slot="drawer-portal" {...props} />;
+  return <DrawerPrimitive.Portal data-slot="drawer-portal" {...props} />;
 });
 DrawerPortal.displayName = "DrawerPortal";
 
@@ -33,7 +33,7 @@ const DrawerClose = React.forwardRef<
   React.ElementRef<typeof DrawerPrimitive.Close>,
   React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Close>
 >(({ ...props }, ref) => {
-  return <DrawerPrimitive.Close ref={ref} data-slot="drawer-close" {...props} />;
+  return <DrawerPrimitive.Close data-slot="drawer-close" {...props} />;
 });
 DrawerClose.displayName = "DrawerClose";
 
