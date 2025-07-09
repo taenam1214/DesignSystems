@@ -9,7 +9,7 @@ const Drawer = React.forwardRef<
   React.ElementRef<typeof DrawerPrimitive.Root>,
   React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Root>
 >(({ ...props }, ref) => {
-  return <DrawerPrimitive.Root ref={ref} data-slot="drawer" {...props} />;
+  return <DrawerPrimitive.Root data-slot="drawer" {...props} />;
 });
 Drawer.displayName = "Drawer";
 
