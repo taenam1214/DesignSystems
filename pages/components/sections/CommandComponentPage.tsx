@@ -124,7 +124,6 @@ import {
   Train,
   Bus,
   Bike,
-  Walk,
   Gift,
   Sparkles,
   Crown,
