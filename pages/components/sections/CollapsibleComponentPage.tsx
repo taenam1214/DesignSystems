@@ -112,7 +112,6 @@ import {
   Train,
   Bus,
   Bike,
-  Walk,
   HelpCircle,
   MessageSquare,
   MessageCircle,
