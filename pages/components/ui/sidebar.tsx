@@ -507,6 +507,9 @@ function SidebarMenuButton({
   const Comp = asChild ? Slot : "button";
   const { isMobile, state } = useSidebar();
 
+  // Destructure ref out of props so it is not passed to Slot
+  const { ref, ...restProps } = props as any;
+
   const button = (
     <Comp
       data-slot="sidebar-menu-button"
@@ -514,7 +517,9 @@ function SidebarMenuButton({
       data-size={size}
       data-active={isActive}
       className={cn(sidebarMenuButtonVariants({ variant, size }), className)}
-      {...props}
+      {...restProps}
+      // Only pass ref if Comp is not Slot
+      {...(asChild ? {} : { ref })}
     />
   );
 
