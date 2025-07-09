@@ -58,7 +58,6 @@ import {
   Volume2,
   Play,
   Pause,
-  Skip,
   Shuffle,
   Repeat,
   Upload,

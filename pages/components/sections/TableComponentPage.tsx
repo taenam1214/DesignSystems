@@ -128,7 +128,6 @@ import {
   Train,
   Bus,
   Bike,
-  Walk,
   Plus,
   Minus,
   X,
