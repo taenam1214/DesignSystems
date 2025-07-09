@@ -405,7 +405,6 @@ const SidebarGroupLabel = React.forwardRef<HTMLDivElement, React.ComponentPropsW
           "group-data-[collapsible=icon]:-mt-8 group-data-[collapsible=icon]:opacity-0",
           className,
         )}
-        ref={ref}
         {...props}
       />
     );
@@ -427,7 +426,6 @@ const SidebarGroupAction = React.forwardRef<HTMLButtonElement, React.ComponentPr
           "group-data-[collapsible=icon]:hidden",
           className,
         )}
-        ref={ref}
         {...props}
       />
     );
