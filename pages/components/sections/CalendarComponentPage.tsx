@@ -37,7 +37,7 @@ import { ko } from 'date-fns/locale';
 export function CalendarComponentPage() {
   const [copiedCode, setCopiedCode] = useState<string | null>(null);
   const [selectedDate, setSelectedDate] = useState<Date | undefined>(new Date());
-  const [dateRange, setDateRange] = useState<{ from: Date | undefined; to: Date | undefined }>({
+  const [dateRange, setDateRange] = useState<{ from: Date | undefined; to?: Date | undefined }>({
     from: new Date(),
     to: addDays(new Date(), 7),
   });
