@@ -18,7 +18,6 @@ import {
   Monitor,
   Smartphone,
   Tablet,
-  SquareAspectRatio,
   RectangleHorizontal,
   RectangleVertical,
   Square,
