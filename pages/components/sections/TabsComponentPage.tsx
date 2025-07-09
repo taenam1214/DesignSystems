@@ -495,14 +495,14 @@ export function TabsComponentPage() {
                       <p className="text-sm">새 프로젝트 초대</p>
                       <p className="text-xs text-muted-foreground">2분 전</p>
                     </div>
-                    <Badge size="sm" className="bg-blue-100 text-blue-800">신규</Badge>
+                    <Badge className="bg-blue-100 text-blue-800">신규</Badge>
                   </div>
                   <div className="flex items-center justify-between p-2 border rounded">
                     <div>
                       <p className="text-sm">주간 보고서 생성됨</p>
                       <p className="text-xs text-muted-foreground">1시간 전</p>
                     </div>
-                    <Badge size="sm" className="bg-green-100 text-green-800">보고서</Badge>
+                    <Badge className="bg-green-100 text-green-800">보고서</Badge>
                   </div>
                 </div>
               </CardContent>
