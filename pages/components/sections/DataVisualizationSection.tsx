@@ -232,7 +232,7 @@ export function DataVisualizationSection() {
                         </div>
                         <div className="bg-muted/30 rounded-lg p-4">
                           <ResponsiveContainer width="100%" height={200}>
-                            {chart.id === 'bar' && (
+                            {chart.id === 'bar' ? (
                               <BarChart data={monthlyData}>
                                 <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
                                 <XAxis dataKey="month" fontSize={12} stroke="var(--muted-foreground)" />
@@ -246,8 +246,7 @@ export function DataVisualizationSection() {
                                 />
                                 <Bar dataKey="sales" fill="var(--chart-1)" radius={[4, 4, 0, 0]} />
                               </BarChart>
-                            )}
-                            {chart.id === 'line' && (
+                            ) : chart.id === 'line' ? (
                               <RechartsLineChart data={performanceData}>
                                 <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
                                 <XAxis dataKey="time" fontSize={12} stroke="var(--muted-foreground)" />
@@ -262,8 +261,7 @@ export function DataVisualizationSection() {
                                 <Line type="monotone" dataKey="cpu" stroke="var(--chart-1)" strokeWidth={2} dot={{ r: 4 }} />
                                 <Line type="monotone" dataKey="memory" stroke="var(--chart-2)" strokeWidth={2} dot={{ r: 4 }} />
                               </RechartsLineChart>
-                            )}
-                            {chart.id === 'pie' && (
+                            ) : chart.id === 'pie' ? (
                               <RechartsPieChart>
                                 <Tooltip 
                                   contentStyle={{ 
@@ -287,8 +285,7 @@ export function DataVisualizationSection() {
                                   ))}
                                 </Pie>
                               </RechartsPieChart>
-                            )}
-                            {chart.id === 'area' && (
+                            ) : chart.id === 'area' ? (
                               <AreaChart data={monthlyData}>
                                 <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
                                 <XAxis dataKey="month" fontSize={12} stroke="var(--muted-foreground)" />
@@ -303,7 +300,7 @@ export function DataVisualizationSection() {
                                 <Area type="monotone" dataKey="sales" stackId="1" stroke="var(--chart-1)" fill="var(--chart-1)" fillOpacity={0.6} />
                                 <Area type="monotone" dataKey="users" stackId="1" stroke="var(--chart-2)" fill="var(--chart-2)" fillOpacity={0.6} />
                               </AreaChart>
-                            )}
+                            ) : null}
                           </ResponsiveContainer>
                         </div>
                       </div>
